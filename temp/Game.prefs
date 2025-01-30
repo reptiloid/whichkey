@@ -1,0 +1,3719 @@
+PreGameData = {
+    CurrentMapDir = '/maps/desert_arena_-_faf_version.v0002',
+    IconReplacements = {
+        {
+            Identifier = 'subtleiconslite',
+            Name = 'Subtle Strategic Icons Lite',
+            Location = '/mods/subtleiconslite',
+            Author = 'black_wriggler',
+            UID = 'b59f537b-67ae-40b4-897b-c6e91d9b2963'
+        },
+        {
+            Identifier = 'calibershqicons2',
+            Name = 'Calibers Alternative HQ icons',
+            Location = '/mods/calibershqicons2',
+            Author = 'Caliber',
+            UID = '11571-22722-33963_22585_3'
+        },
+        {
+            Identifier = 'calibersmassicons',
+            Name = 'Calibers Mass Extractor Icons',
+            Location = '/mods/calibersmassicons',
+            Author = 'Caliber',
+            UID = '11811-55555-32833_77744'
+        },
+        {
+            Identifier = 'calibersradar',
+            Name = 'Calibers Radar Icons',
+            Location = '/mods/calibersradar',
+            Author = 'Caliber',
+            UID = '11711-227933-99199_44747'
+        },
+        {
+            Identifier = 'calibersnuke',
+            Name = 'Calibers Nuke Icons',
+            Location = '/mods/calibersnuke',
+            Author = 'Caliber',
+            UID = '11755-227923-1815151_44744'
+        }
+    }
+}
+mods_expanded = true
+Options = {
+    Log = {
+        Debug = false,
+        Warn = true,
+        Info = true,
+        Custom = false,
+        Error = false,
+        Filter = '*debug:'
+    },
+    Debug = {
+        Files = { },
+        Breakpoints = { }
+    }
+}
+CPUBenchmark = 163
+options_overrides = {
+    language = 'US',
+    primary_adapter = {
+        default = '1024,768,60',
+        custom = {
+            states = {
+                {
+                    text = '<LOC OPTIONS_0070>Windowed',
+                    key = 'windowed'
+                },
+                {
+                    text = '1920x1080(60)',
+                    key = '1920,1080,60'
+                },
+                {
+                    text = '1024x768(60)',
+                    key = '1024,768,60'
+                },
+                {
+                    text = '1024x768(70)',
+                    key = '1024,768,70'
+                },
+                {
+                    text = '1024x768(75)',
+                    key = '1024,768,75'
+                },
+                {
+                    text = '1152x864(60)',
+                    key = '1152,864,60'
+                },
+                {
+                    text = '1280x768(60)',
+                    key = '1280,768,60'
+                },
+                {
+                    text = '1280x800(60)',
+                    key = '1280,800,60'
+                },
+                {
+                    text = '1280x960(60)',
+                    key = '1280,960,60'
+                },
+                {
+                    text = '1280x1024(60)',
+                    key = '1280,1024,60'
+                },
+                {
+                    text = '1280x1024(75)',
+                    key = '1280,1024,75'
+                },
+                {
+                    text = '1360x768(60)',
+                    key = '1360,768,60'
+                },
+                {
+                    text = '1366x768(60)',
+                    key = '1366,768,60'
+                },
+                {
+                    text = '1600x900(59)',
+                    key = '1600,900,59'
+                },
+                {
+                    text = '1600x900(60)',
+                    key = '1600,900,60'
+                },
+                {
+                    text = '1600x1024(59)',
+                    key = '1600,1024,59'
+                },
+                {
+                    text = '1600x1024(60)',
+                    key = '1600,1024,60'
+                },
+                {
+                    text = '1680x1050(59)',
+                    key = '1680,1050,59'
+                },
+                {
+                    text = '1680x1050(60)',
+                    key = '1680,1050,60'
+                },
+                {
+                    text = '1440x900(60)',
+                    key = '1440,900,60'
+                }
+            }
+        }
+    },
+    shadow_quality = {
+        default = 1,
+        custom = {
+            states = {
+                {
+                    text = '<LOC _Off>',
+                    key = 0
+                },
+                {
+                    text = '<LOC _Low>',
+                    key = 1
+                },
+                {
+                    text = '<LOC _Medium>',
+                    key = 2
+                },
+                {
+                    text = '<LOC _High>',
+                    key = 3
+                }
+            }
+        }
+    },
+    fidelity_presets = {
+        default = 1,
+        custom = {
+            states = {
+                {
+                    text = '<LOC _Low>',
+                    key = 0
+                },
+                {
+                    text = '<LOC _Medium>',
+                    key = 1
+                },
+                {
+                    text = '<LOC _High>',
+                    key = 2
+                },
+                {
+                    text = '<LOC _Custom>',
+                    key = 4
+                }
+            }
+        }
+    },
+    antialiasing = {
+        default = 0,
+        custom = {
+            states = {
+                {
+                    text = '<LOC OPTIONS_0029>Off',
+                    key = 0
+                },
+                {
+                    text = '2',
+                    key = 64
+                },
+                {
+                    text = '4',
+                    key = 128
+                },
+                {
+                    text = '8Q',
+                    key = 256
+                }
+            }
+        }
+    },
+    fidelity = {
+        default = 1,
+        custom = {
+            states = {
+                {
+                    text = '<LOC _Low>',
+                    key = 0
+                },
+                {
+                    text = '<LOC _Medium>',
+                    key = 1
+                },
+                {
+                    text = '<LOC _High>',
+                    key = 2
+                }
+            }
+        }
+    },
+    secondary_adapter = {
+        default = 'disabled',
+        custom = {
+            states = {
+                {
+                    text = '<LOC _Disabled>',
+                    key = 'disabled'
+                },
+                {
+                    text = '1024x768(60)',
+                    key = '1024,768,60'
+                },
+                {
+                    text = '1024x768(70)',
+                    key = '1024,768,70'
+                },
+                {
+                    text = '1024x768(75)',
+                    key = '1024,768,75'
+                },
+                {
+                    text = '1152x864(60)',
+                    key = '1152,864,60'
+                },
+                {
+                    text = '1280x768(60)',
+                    key = '1280,768,60'
+                },
+                {
+                    text = '1280x800(60)',
+                    key = '1280,800,60'
+                },
+                {
+                    text = '1280x960(60)',
+                    key = '1280,960,60'
+                },
+                {
+                    text = '1280x1024(60)',
+                    key = '1280,1024,60'
+                },
+                {
+                    text = '1280x1024(75)',
+                    key = '1280,1024,75'
+                },
+                {
+                    text = '1360x768(60)',
+                    key = '1360,768,60'
+                },
+                {
+                    text = '1366x768(60)',
+                    key = '1366,768,60'
+                },
+                {
+                    text = '1600x900(59)',
+                    key = '1600,900,59'
+                },
+                {
+                    text = '1600x900(60)',
+                    key = '1600,900,60'
+                },
+                {
+                    text = '1600x1024(59)',
+                    key = '1600,1024,59'
+                },
+                {
+                    text = '1600x1024(60)',
+                    key = '1600,1024,60'
+                },
+                {
+                    text = '1680x1050(59)',
+                    key = '1680,1050,59'
+                },
+                {
+                    text = '1680x1050(60)',
+                    key = '1680,1050,60'
+                },
+                {
+                    text = '1768x992(25)',
+                    key = '1768,992,25'
+                },
+                {
+                    text = '1768x992(30)',
+                    key = '1768,992,30'
+                },
+                {
+                    text = '1768x992(29)',
+                    key = '1768,992,29'
+                },
+                {
+                    text = '1920x1080(60)',
+                    key = '1920,1080,60'
+                },
+                {
+                    text = '1920x1080(59)',
+                    key = '1920,1080,59'
+                },
+                {
+                    text = '1920x1080(50)',
+                    key = '1920,1080,50'
+                },
+                {
+                    text = '1920x1080(30)',
+                    key = '1920,1080,30'
+                },
+                {
+                    text = '1920x1080(29)',
+                    key = '1920,1080,29'
+                },
+                {
+                    text = '1920x1080(25)',
+                    key = '1920,1080,25'
+                },
+                {
+                    text = '1920x1080(75)',
+                    key = '1920,1080,75'
+                },
+                {
+                    text = '1440x900(60)',
+                    key = '1440,900,60'
+                }
+            }
+        }
+    }
+}
+profile = {
+    current = 1,
+    profiles = {
+        {
+            LobbyOpt_M28OvwC = '1.5',
+            LobbyOpt_Phantom_AutoBalance = '1',
+            LobbyOpt_CommonArmy = 'Off',
+            LobbyOpt_UnitCap = '1500',
+            EUTwindow = {
+                top = 205,
+                bottom = 752,
+                height = 547,
+                right = 673,
+                left = 273,
+                width = 400
+            },
+            console_fade_delay = 3,
+            LastScenario = '/maps/desert_arena_-_faf_version.v0002/desert_arena_-_faf_version_scenario.lua',
+            LobbyOpt_AIMapMarker = 'miss',
+            LobbyOpt_AIPLatoonNameDebug = 'off',
+            console_font = 'Zeroes Three',
+            layout = 'bottom',
+            console_font_size = 12,
+            LobbyChangelog = 3816,
+            LobbyOpt_CmApplyAIx = 2,
+            Notify_Messages = {
+                other = {
+                    nuke = 'Nuke Silo construction',
+                    arty = 'Tech 3 Artillery construction'
+                },
+                uef = {
+                    HeavyAntiMatterCannon = 'Gun (Damage&Range)',
+                    Shield = 'Shield',
+                    AdvancedEngineering = 'T2',
+                    Teleporter = 'Teleporter',
+                    RightPod = 'Right Drone',
+                    T3Engineering = 'T3',
+                    TacticalMissile = 'Tactical Missile',
+                    ResourceAllocation = 'RAS',
+                    TacticalNukeMissile = 'Tactical Nuke',
+                    DamageStabilization = 'Nano-Repair',
+                    ShieldGeneratorField = 'Shield Field',
+                    LeftPod = 'Left Drone'
+                },
+                tech = {
+                    researchnavaltech3 = 'Tech 3 Naval HQ upgrade',
+                    researchlandtech2 = 'Tech 2 Land HQ upgrade',
+                    researchairtech2 = 'Tech 2 Air HQ upgrade',
+                    researchnavaltech2 = 'Tech 2 Naval HQ upgrade',
+                    researchairtech3 = 'Tech 3 Air HQ upgrade',
+                    researchlandtech3 = 'Tech 3 Land HQ upgrade'
+                },
+                nomads = {
+                    Capacitor = 'Capacitor',
+                    IntelProbeAdv = 'Advanced Intel Probe',
+                    RapidRepair = 'Rapid Repair',
+                    OrbitalBombardment = 'Orbital Bombardment',
+                    AdvancedEngineering = 'T2',
+                    MovementSpeedIncrease = 'Locomotor',
+                    Teleporter = 'Teleporter',
+                    ResourceAllocation = 'RAS',
+                    DoubleGuns = 'Second Gun',
+                    ResourceAllocationAdvanced = 'ARAS',
+                    IntelProbe = 'Intel Probe',
+                    GunUpgrade = 'Gun (Speed&Range)',
+                    T3Engineering = 'T3',
+                    PowerArmor = 'Power Armor'
+                },
+                experimentals = {
+                    xeb2402 = 'Novax Satellite Station',
+                    ues0401 = 'Atlantis',
+                    ual0401 = 'Galactic Colossus',
+                    url0402 = 'Monkeylord',
+                    ueb2401 = 'Mavor',
+                    uaa0310 = 'Czar',
+                    url0401 = 'Scathis',
+                    xsb2401 = 'Yolona Oss',
+                    xsl0401 = 'Ythotha',
+                    uas0401 = 'Tempest',
+                    xsa0402 = 'Ahwassa',
+                    xab1401 = 'Paragon',
+                    ura0401 = 'Soulripper',
+                    xrl0403 = 'Megalith',
+                    uel0401 = 'Fatboy'
+                },
+                seraphim = {
+                    AdvancedEngineering = 'T2',
+                    RateOfFire = 'Gun (Speed&Range)',
+                    Teleporter = 'Teleporter',
+                    T3Engineering = 'T3',
+                    Missile = 'Tactical Missile',
+                    DamageStabilizationAdvanced = 'Advanced Nano-Repair',
+                    ResourceAllocationAdvanced = 'ARAS',
+                    ResourceAllocation = 'RAS',
+                    BlastAttack = 'Gun (Splash)',
+                    DamageStabilization = 'Nano-Repair',
+                    AdvancedRegenAura = 'Advanced Regen Aura',
+                    RegenAura = 'Regen Aura'
+                },
+                cybran = {
+                    CoolingUpgrade = 'Gun (Speed&Range)',
+                    AdvancedEngineering = 'T2',
+                    CloakingGenerator = 'Cloaking',
+                    StealthGenerator = 'Stealth',
+                    ResourceAllocation = 'RAS',
+                    MicrowaveLaserGenerator = 'Laser',
+                    Teleporter = 'Teleporter',
+                    T3Engineering = 'T3',
+                    NaniteTorpedoTube = 'Torpedo'
+                },
+                aeon = {
+                    ShieldHeavy = 'Shield Heavy',
+                    Shield = 'Shield',
+                    AdvancedEngineering = 'T2',
+                    ChronoDampener = 'Chrono Dampener',
+                    ResourceAllocationAdvanced = 'ARAS',
+                    CrysalisBeam = 'Gun (Range)',
+                    HeatSink = 'Gun (Speed)',
+                    EnhancedSensors = 'Sensors',
+                    Teleporter = 'Teleporter',
+                    T3Engineering = 'T3',
+                    ResourceAllocation = 'RAS'
+                }
+            },
+            LobbyOpt_PhantomBonusMultiplier = '70',
+            LobbyOpt_PhantomRevealWho = '0',
+            Notify_all_disabled = false,
+            LobbyOpt_PhantomRevealTo = '0',
+            console_alpha = 0.80000001192093,
+            teamColorSettings = {
+                autoEnable = true,
+                colors = {
+                    Player = {
+                        'ff40bf40'
+                    },
+                    Neutral = {
+                        'ffdeb887'
+                    },
+                    Allies = {
+                        'ffff88ff',
+                        'ffff6700',
+                        'ff436eee',
+                        'ff2e8b57',
+                        'ff40bf40',
+                        'ff2e8b57',
+                        'ff40bf40',
+                        'ff2e8b57'
+                    },
+                    Enemies = {
+                        'ffe80a0a',
+                        'ff5f01a7',
+                        'ff616d7e',
+                        'ff116a78',
+                        'ffe80a0a',
+                        'ff901427',
+                        'ffe80a0a',
+                        'ff901427'
+                    }
+                },
+                changeColorsInScore = false
+            },
+            LobbyOpt_M28DodgeMicro = 1,
+            LobbyOpt_M28TimeBetweenOrders = '1.0',
+            UserKeyMap = {
+                Tab = 'pause_unit',
+                ['Ctrl-Shift-4'] = 'fac_group4',
+                ['Ctrl-Shift-D'] = 'select_nearest_land_factory',
+                ['Ctrl-Alt-D'] = 'debug_dump_ui_controls',
+                ['Ctrl-7'] = 'set_group7',
+                End = 'split_screen_disable',
+                ['Shift-6'] = 'append_group6',
+                ['Ctrl-2'] = 'set_group2',
+                F2 = 'toggle_score_screen',
+                ['Ctrl-9'] = 'set_group9',
+                ['Ctrl-Alt-T'] = 'track_unit_second_mon',
+                ['Shift-1'] = 'append_group1',
+                PageUp = 'chat_page_up',
+                ['Shift-3'] = 'append_group3',
+                ['Ctrl-N'] = 'rename',
+                ['Shift-Z'] = 'shift_spreadattack',
+                LeftBracket = 'mode',
+                ['Ctrl-5'] = 'set_group5',
+                F5 = 'ping_alert',
+                ['Ctrl-Alt-R'] = 'toggle_reclaim_labels',
+                ['Ctrl-Z'] = 'select_all_units_of_same_type',
+                ['Ctrl-F9'] = 'debug_toggle_log_window',
+                ['Shift-5'] = 'append_group5',
+                ['Ctrl-Shift-F1'] = 'debug_toggle_pannels',
+                ['Ctrl-Shift-7'] = 'fac_group7',
+                ['Ctrl-8'] = 'set_group8',
+                ['Alt-LeftArrow'] = 'switch_skin_down',
+                ['Shift-4'] = 'append_group4',
+                ['Ctrl-C'] = 'select_all_onscreen',
+                ['Alt-DownArrow'] = 'switch_layout_down',
+                ['Ctrl-W'] = 'tog_military',
+                ['Ctrl-Shift-T'] = 'track_unit_minimap',
+                ['1'] = 'group1',
+                ['0'] = 'group0',
+                ['3'] = 'group3',
+                ['2'] = 'group2',
+                ['5'] = 'group5',
+                F4 = 'toggle_diplomacy_screen',
+                ['7'] = 'group7',
+                ['6'] = 'group6',
+                ['9'] = 'group9',
+                ['Ctrl-H'] = 'select_all_factory_onscreen',
+                Pause = 'pause',
+                A = 'reclaim',
+                C = 'aa',
+                B = 'arties',
+                ['Ctrl-3'] = 'set_group3',
+                D = 'massfab',
+                G = 'templates',
+                ['Ctrl-Shift-9'] = 'fac_group9',
+                I = 'guard',
+                H = 'engystation',
+                Home = 'split_screen_enable',
+                J = 'mml',
+                M = 'upgrades',
+                L = 'fieldengy',
+                O = 'overcharge',
+                N = 'tml',
+                Q = 'cycle_context_based_templates',
+                S = 'mass',
+                R = 'shields',
+                U = 'mobilearty',
+                ['Ctrl-4'] = 'set_group4',
+                F7 = 'ping_attack',
+                V = 'torpedo',
+                ['Ctrl-S'] = 'select_naval',
+                ['Ctrl-1'] = 'set_group1',
+                Z = 'toggle_repeat_build',
+                ['Ctrl-Shift-2'] = 'fac_group2',
+                ['Ctrl-B'] = 'select_engineers',
+                ['Ctrl-Alt-B'] = 'debug_bones',
+                ['Shift-Period'] = 'goto_engineer',
+                ['Ctrl-D'] = 'select_land',
+                ['Ctrl-Q'] = 'select_anti_air_fighters',
+                ['Ctrl-Alt-W'] = 'debug_dump_focus_ui_control',
+                F6 = 'ping_move',
+                F12 = 'show_objective_screen',
+                ['Ctrl-Shift-C'] = 'debug_copy_units',
+                ['Ctrl-K'] = 'suicide',
+                ['Ctrl-X'] = 'select_all',
+                ['Ctrl-Shift-S'] = 'select_nearest_naval_factory',
+                F10 = 'toggle_main_menu',
+                F1 = 'toggle_key_bindings',
+                NumStar = 'reset_game_speed',
+                ['Ctrl-Shift-1'] = 'fac_group1',
+                ['Ctrl-Shift-3'] = 'fac_group3',
+                F9 = 'show_network_stats',
+                ['Alt-Comma'] = 'select_commander',
+                ['Ctrl-Alt-V'] = 'debug_skeletons',
+                ['Ctrl-E'] = 'tog_defense',
+                Comma = 'goto_commander',
+                T = 'tmd',
+                ['Alt-Period'] = 'select_idle_t1_engineer',
+                NumPlus = 'increase_game_speed',
+                ['Ctrl-Alt-N'] = 'debug_nodamage',
+                ['8'] = 'group8',
+                ['Ctrl-Alt-F1'] = 'toggle_notify_customiser',
+                ['Alt-F2'] = 'debug_create_unit',
+                ['4'] = 'group4',
+                ['Shift-0'] = 'append_group0',
+                ['Ctrl-6'] = 'set_group6',
+                ['Ctrl-Period'] = 'select_all_eng_onscreen',
+                ['Shift-Q'] = 'shift_patrol',
+                E = 'sensors',
+                ['Ctrl-Shift-F11'] = 'debug_open_lua_debugger',
+                Period = 'cycle_engineers',
+                ['Ctrl-Shift-V'] = 'debug_paste_units',
+                F8 = 'ping_marker',
+                ['Ctrl-U'] = 'applyMyBinds',
+                ['Ctrl-R'] = 'tog_econ',
+                ['Ctrl-V'] = 'cam_free',
+                F11 = 'Unpause best upgrading t1 mex',
+                ['Ctrl-F'] = 'cap_frame',
+                Esc = 'set_target_priority',
+                ['Ctrl-Alt-Z'] = 'debug_sally_shears',
+                ['Ctrl-T'] = 'debug_teleport',
+                ['Ctrl-Tab'] = 'rem_cam_position',
+                ['Shift-Esc'] = 'soft_stop',
+                PageDown = 'chat_page_down',
+                ['Alt-Delete'] = 'debug_destroy_units',
+                ['Ctrl-Shift-8'] = 'fac_group8',
+                ['Shift-7'] = 'append_group7',
+                NumSlash = 'show_fps',
+                ['Ctrl-0'] = 'set_group0',
+                ['Shift-O'] = 'shift_overcharge',
+                ['Shift-8'] = 'append_group8',
+                ['Ctrl-Shift-5'] = 'fac_group5',
+                ['Shift-2'] = 'append_group2',
+                ['Alt-UpArrow'] = 'switch_layout_up',
+                ['Alt-RightArrow'] = 'switch_skin_up',
+                ['Shift-A'] = 'shift_reclaim',
+                ['Ctrl-Shift-A'] = 'select_nearest_air_factory',
+                ['Ctrl-Shift-0'] = 'fac_group0',
+                ['Shift-9'] = 'append_group9',
+                F3 = 'quick_save',
+                ['Shift-PageDown'] = 'chat_line_down',
+                ['Shift-Tab'] = 'add_cam_position',
+                NumMinus = 'decrease_game_speed',
+                ['Ctrl-Shift-6'] = 'fac_group6',
+                ['Ctrl-Shift-K'] = 'Kill_Selected_Units',
+                ['Shift-I'] = 'shift_guard',
+                K = 'mobileshield',
+                ['Ctrl-A'] = 'select_air',
+                ['Shift-PageUp'] = 'chat_line_up',
+                Y = 'xp',
+                W = 'builders',
+                X = 'defense'
+            },
+            LobbyPresets = {
+                {
+                    GameMods = { },
+                    Name = 'lastGame',
+                    MapPath = '/maps/desert_arena_-_faf_version.v0002/desert_arena_-_faf_version_scenario.lua',
+                    PlayerOptions = {
+                        {
+                            MEAN = 1500,
+                            StartSpot = 1,
+                            GameType = 'FAF',
+                            ArmyColor = 8,
+                            PlayerClan = '',
+                            DEV = 500,
+                            Team = 3,
+                            Ready = false,
+                            BadMap = false,
+                            Civilian = false,
+                            PlayerName = 'batrak',
+                            AIPersonality = '',
+                            Commit = 'c2628426ab70f1df01a1cfc5fa2d4b7d09af9c18',
+                            ObserverListIndex = -1,
+                            Country = 'world',
+                            PL = 0,
+                            Version = '3817',
+                            OwnerID = '0',
+                            NG = 0,
+                            Human = true,
+                            Faction = 4,
+                            PlayerColor = 8
+                        }
+                    },
+                    MapName = 'Desert Arena - FAF version',
+                    GameOptions = {
+                        PhantomRevealTime1 = '30',
+                        PhantomMeteorDelayTime = '30',
+                        AIEndlessGameLoop = 'off',
+                        ManualUnitShare = 'all',
+                        CheatMult = '2.0',
+                        AIUnitCap = '0',
+                        FogOfWar = 'explored',
+                        ScenarioFile = '/maps/desert_arena_-_faf_version.v0002/desert_arena_-_faf_version_scenario.lua',
+                        PhantomRevealTime3 = '1',
+                        PhantomSubseqMeteorDelayTime = '12',
+                        Share = 'FullShare',
+                        Score = 'no',
+                        RevealCivilians = 'Yes',
+                        M28CAInherit = 2,
+                        CmpAIDelay = '300',
+                        Timeouts = '3',
+                        AIDebugDisplay = 'displayOff',
+                        AIGameenderStart = 20,
+                        GameSpeed = 'normal',
+                        CampAI = 1,
+                        CmM28Easy = 2,
+                        M28PrioritiseBPs = 1,
+                        M28OvwT = '15',
+                        AIOverwhelmDelay = 20,
+                        PhantomPaladinCoefficient = '2',
+                        TeamLock = 'locked',
+                        CheatsEnabled = 'true',
+                        M28OvwC = '1.5',
+                        AIBuilderNameDebug = 'off',
+                        PhantomRevealTime2 = '1',
+                        CommonArmy = 'Off',
+                        AIPathingDebug = 'off',
+                        AIReplacement = 'Off',
+                        AutoTeams = 'tvsb',
+                        CmApplyAIx = 2,
+                        M28OvwR = '0.0',
+                        BuildMult = '2.0',
+                        RandomMap = 'Off',
+                        PhantomBonusMultiplier = '70',
+                        NoRushOption = 'Off',
+                        AIOverwhelmIncrease = 0.025000000372529,
+                        Phantom_AutoBalance = '1',
+                        PhantomRevealWho = '0',
+                        AllowObservers = true,
+                        Victory = 'sandbox',
+                        M28DodgeMicro = 1,
+                        PhantomRevealTo = '0',
+                        MySpecialKey1 = 'off',
+                        TeamSpawn = 'fixed',
+                        NavalExpansionsAllowed = '4',
+                        DisconnectionDelay02 = '90',
+                        UnitCap = '1500',
+                        TMLRandom = '0',
+                        Phantom_PaladinMarks = '1',
+                        AIMapMarker = 'miss',
+                        Unranked = 'Yes',
+                        Phantom_Meteor = '0',
+                        PhantomPaladinBonus = '45',
+                        ShareUnitCap = 'allies',
+                        OmniCheat = 'on',
+                        M28CombinedArmy = 2,
+                        Phantom_PhantNumber = '0',
+                        AIThreatDisplay = 'threatOff',
+                        Phantom_DeathReveal = '1',
+                        AIPLatoonNameDebug = 'off',
+                        LandExpansionsAllowed = '5',
+                        PrebuiltUnits = 'Off',
+                        CivilianAlliance = 'enemy',
+                        M28TimeBetweenOrders = '1.0'
+                    }
+                },
+                {
+                    GameMods = { },
+                    Name = 'cheat',
+                    MapPath = '/maps/scmp_009/scmp_009_scenario.lua',
+                    PlayerOptions = { },
+                    MapName = "Seton's Clutch",
+                    GameOptions = {
+                        TeamLock = 'locked',
+                        CheatsEnabled = 'true',
+                        PhantomRevealTime1 = '30',
+                        AIBuilderNameDebug = 'off',
+                        RestrictedCategories = { },
+                        AIEndlessGameLoop = 'off',
+                        CommonArmy = 'Off',
+                        CheatMult = '2.0',
+                        Unranked = 'Yes',
+                        AutoTeams = 'pvsi',
+                        FogOfWar = 'explored',
+                        PhantomBonusMultiplier = '70',
+                        PhantomMeteorDelayTime = '30',
+                        BuildMult = '2.0',
+                        UnitCap = '1500',
+                        AIUnitCap = '0',
+                        RandomMap = 'Off',
+                        AIOverwhelmDelay = 20,
+                        AIPathingDebug = 'off',
+                        PhantomPaladinBonus = '45',
+                        NoRushOption = 'Off',
+                        ShareUnitCap = 'none',
+                        ScenarioFile = '/maps/scmp_009/scmp_009_scenario.lua',
+                        PhantomRevealTime3 = '1',
+                        PhantomRevealTime2 = '1',
+                        PhantomSubseqMeteorDelayTime = '12',
+                        Share = 'ShareUntilDeath',
+                        Phantom_AutoBalance = '1',
+                        Score = 'no',
+                        RevealCivilians = 'Yes',
+                        LandExpansionsAllowed = '5',
+                        AllowObservers = true,
+                        Victory = 'sandbox',
+                        AIMapMarker = 'miss',
+                        CivilianAlliance = 'enemy',
+                        Timeouts = '3',
+                        AIDebugDisplay = 'displayOff',
+                        TeamSpawn = 'fixed',
+                        NavalExpansionsAllowed = '4',
+                        GameSpeed = 'normal',
+                        DisconnectionDelay02 = '90',
+                        TMLRandom = '0',
+                        OmniCheat = 'on',
+                        AIGameenderStart = 20,
+                        AIReplacement = 'Off',
+                        AIThreatDisplay = 'threatOff',
+                        MySpecialKey1 = 'off',
+                        PhantomRevealTo = '0',
+                        PhantomRevealWho = '0',
+                        Phantom_Meteor = '0',
+                        Phantom_PhantNumber = '0',
+                        ManualUnitShare = 'all',
+                        Phantom_DeathReveal = '1',
+                        AIPLatoonNameDebug = 'off',
+                        PhantomPaladinCoefficient = '2',
+                        PrebuiltUnits = 'Off',
+                        AIOverwhelmIncrease = 0.025000000372529,
+                        Phantom_PaladinMarks = '1'
+                    }
+                },
+                {
+                    GameMods = { },
+                    Name = 'full_def',
+                    MapPath = '/maps/scmp_009/scmp_009_scenario.lua',
+                    PlayerOptions = { },
+                    MapName = "Seton's Clutch",
+                    GameOptions = {
+                        TeamLock = 'locked',
+                        CheatsEnabled = 'false',
+                        PhantomRevealTime1 = '30',
+                        AIBuilderNameDebug = 'off',
+                        RestrictedCategories = { },
+                        AIEndlessGameLoop = 'off',
+                        ManualUnitShare = 'all',
+                        CheatMult = '2.0',
+                        Unranked = 'No',
+                        AutoTeams = 'pvsi',
+                        FogOfWar = 'explored',
+                        Phantom_PaladinMarks = '1',
+                        PhantomPaladinBonus = '45',
+                        BuildMult = '2.0',
+                        UnitCap = '1500',
+                        AIPathingDebug = 'off',
+                        RandomMap = 'Off',
+                        AIOverwhelmDelay = 20,
+                        ShareUnitCap = 'allies',
+                        PhantomBonusMultiplier = '70',
+                        NoRushOption = 'Off',
+                        PhantomRevealTime2 = '1',
+                        AIOverwhelmIncrease = 0.025000000372529,
+                        PhantomRevealTime3 = '1',
+                        LandExpansionsAllowed = '5',
+                        PhantomSubseqMeteorDelayTime = '12',
+                        Share = 'FullShare',
+                        Phantom_AutoBalance = '1',
+                        Score = 'no',
+                        RevealCivilians = 'Yes',
+                        NavalExpansionsAllowed = '4',
+                        AllowObservers = false,
+                        Victory = 'demoralization',
+                        AIMapMarker = 'miss',
+                        CivilianAlliance = 'enemy',
+                        Timeouts = '3',
+                        AIDebugDisplay = 'displayOff',
+                        TeamSpawn = 'balanced',
+                        MySpecialKey1 = 'off',
+                        GameSpeed = 'normal',
+                        DisconnectionDelay02 = '90',
+                        TMLRandom = '0',
+                        OmniCheat = 'on',
+                        AIGameenderStart = 20,
+                        AIReplacement = 'Off',
+                        AIThreatDisplay = 'threatOff',
+                        PhantomRevealTo = '0',
+                        PhantomRevealWho = '0',
+                        CommonArmy = 'Off',
+                        Phantom_Meteor = '0',
+                        Phantom_PhantNumber = '0',
+                        PhantomMeteorDelayTime = '30',
+                        Phantom_DeathReveal = '1',
+                        AIPLatoonNameDebug = 'off',
+                        PhantomPaladinCoefficient = '2',
+                        PrebuiltUnits = 'Off',
+                        AIUnitCap = '0',
+                        ScenarioFile = '/maps/scmp_009/scmp_009_scenario.lua'
+                    }
+                }
+            },
+            LobbyOpt_ShareUnitCap = 'allies',
+            EUTpos = {
+                top = 75,
+                left = 25
+            },
+            LobbyOpt_AllowObservers = true,
+            LobbyOpt_AIPathingDebug = 'off',
+            LastColor = 1,
+            LobbyOpt_CivilianAlliance = 'enemy',
+            LobbyOpt_Phantom_PaladinMarks = '1',
+            Notify_other_disabled = true,
+            mini_ui_minimap = {
+                top = 180,
+                bottom = 443,
+                height = 263,
+                right = 294,
+                left = 10,
+                width = 284
+            },
+            NetName = 'batrak',
+            console_font_color = 'FFbadbdb',
+            EM_Settings = {
+                as_players = { }
+            },
+            scoreoverlay = true,
+            LobbyOpt_Timeouts = '3',
+            LobbyOpt_ManualUnitShare = 'all',
+            LobbyHideDefaultOptions = 'true',
+            LobbyOpt_MySpecialKey1 = 'off',
+            LobbyOpt_PhantomMeteorDelayTime = '30',
+            LobbyOpt_GameSpeed = 'normal',
+            LobbyOpt_CheatMult = '2.0',
+            LobbyOpt_M28CombinedArmy = 2,
+            LobbyOpt_CmpAIDelay = '300',
+            LobbyOpt_AIEndlessGameLoop = 'off',
+            LobbyOpt_AIThreatDisplay = 'threatOff',
+            LobbyOpt_Title = '',
+            LobbyOpt_OmniCheat = 'on',
+            UserKeyMapName = 'hotbuildKeyMap.lua',
+            LobbyOpt_Unranked = 'Yes',
+            briefing_log = true,
+            LobbyOpt_RevealCivilians = 'Yes',
+            LobbyOpt_PhantomSubseqMeteorDelayTime = '12',
+            ['4SBGeneralwindow'] = {
+                top = 320,
+                bottom = 867,
+                height = 547,
+                right = 826,
+                left = 426,
+                width = 400
+            },
+            LobbyOpt_GameRules = '',
+            LastColorFAF = 8,
+            LobbyOpt_AIBuilderNameDebug = 'off',
+            LobbyBackground = 5,
+            LobbyOpt_Phantom_PhantNumber = '0',
+            LobbyOpt_AutoTeams = 'tvsb',
+            LobbyOpt_PhantomRevealTime3 = '1',
+            MiniMap_resource_icons = true,
+            build_templates_factory = {
+                {
+                    templateData = {
+                        {
+                            id = 'ual0105',
+                            count = 1
+                        },
+                        {
+                            id = 'ual0101',
+                            count = 1
+                        },
+                        {
+                            id = 'ual0106',
+                            count = 1
+                        },
+                        {
+                            id = 'ual0104',
+                            count = 1
+                        },
+                        {
+                            id = 'ual0201',
+                            count = 1
+                        }
+                    },
+                    name = '(1)',
+                    icon = 'ual0105',
+                    templateID = 1
+                }
+            },
+            LoadingFaction = 4,
+            Notify_Messages_ESC = {
+                other = {
+                    arty = '\\u54\\u65\\u63\\u68\\u20\\u33\\u20\\u41\\u72\\u74\\u69\\u6C\\u6C\\u65\\u72\\u79\\u20\\u63\\u6F\\u6E\\u73\\u74\\u72\\u75\\u63\\u74\\u69\\u6F\\u6E',
+                    nuke = '\\u4E\\u75\\u6B\\u65\\u20\\u53\\u69\\u6C\\u6F\\u20\\u63\\u6F\\u6E\\u73\\u74\\u72\\u75\\u63\\u74\\u69\\u6F\\u6E'
+                },
+                uef = {
+                    HeavyAntiMatterCannon = '\\u47\\u75\\u6E\\u20\\u28\\u44\\u61\\u6D\\u61\\u67\\u65\\u26\\u52\\u61\\u6E\\u67\\u65\\u29',
+                    Shield = '\\u53\\u68\\u69\\u65\\u6C\\u64',
+                    Teleporter = '\\u54\\u65\\u6C\\u65\\u70\\u6F\\u72\\u74\\u65\\u72',
+                    LeftPod = '\\u4C\\u65\\u66\\u74\\u20\\u44\\u72\\u6F\\u6E\\u65',
+                    RightPod = '\\u52\\u69\\u67\\u68\\u74\\u20\\u44\\u72\\u6F\\u6E\\u65',
+                    ShieldGeneratorField = '\\u53\\u68\\u69\\u65\\u6C\\u64\\u20\\u46\\u69\\u65\\u6C\\u64',
+                    TacticalMissile = '\\u54\\u61\\u63\\u74\\u69\\u63\\u61\\u6C\\u20\\u4D\\u69\\u73\\u73\\u69\\u6C\\u65',
+                    ResourceAllocation = '\\u52\\u41\\u53',
+                    TacticalNukeMissile = '\\u54\\u61\\u63\\u74\\u69\\u63\\u61\\u6C\\u20\\u4E\\u75\\u6B\\u65',
+                    DamageStabilization = '\\u4E\\u61\\u6E\\u6F\\u2D\\u52\\u65\\u70\\u61\\u69\\u72',
+                    T3Engineering = '\\u54\\u33',
+                    AdvancedEngineering = '\\u54\\u32'
+                },
+                tech = {
+                    researchnavaltech3 = '\\u54\\u65\\u63\\u68\\u20\\u33\\u20\\u4E\\u61\\u76\\u61\\u6C\\u20\\u48\\u51\\u20\\u75\\u70\\u67\\u72\\u61\\u64\\u65',
+                    researchlandtech2 = '\\u54\\u65\\u63\\u68\\u20\\u32\\u20\\u4C\\u61\\u6E\\u64\\u20\\u48\\u51\\u20\\u75\\u70\\u67\\u72\\u61\\u64\\u65',
+                    researchairtech2 = '\\u54\\u65\\u63\\u68\\u20\\u32\\u20\\u41\\u69\\u72\\u20\\u48\\u51\\u20\\u75\\u70\\u67\\u72\\u61\\u64\\u65',
+                    researchnavaltech2 = '\\u54\\u65\\u63\\u68\\u20\\u32\\u20\\u4E\\u61\\u76\\u61\\u6C\\u20\\u48\\u51\\u20\\u75\\u70\\u67\\u72\\u61\\u64\\u65',
+                    researchairtech3 = '\\u54\\u65\\u63\\u68\\u20\\u33\\u20\\u41\\u69\\u72\\u20\\u48\\u51\\u20\\u75\\u70\\u67\\u72\\u61\\u64\\u65',
+                    researchlandtech3 = '\\u54\\u65\\u63\\u68\\u20\\u33\\u20\\u4C\\u61\\u6E\\u64\\u20\\u48\\u51\\u20\\u75\\u70\\u67\\u72\\u61\\u64\\u65'
+                },
+                nomads = {
+                    Capacitor = '\\u43\\u61\\u70\\u61\\u63\\u69\\u74\\u6F\\u72',
+                    IntelProbeAdv = '\\u41\\u64\\u76\\u61\\u6E\\u63\\u65\\u64\\u20\\u49\\u6E\\u74\\u65\\u6C\\u20\\u50\\u72\\u6F\\u62\\u65',
+                    RapidRepair = '\\u52\\u61\\u70\\u69\\u64\\u20\\u52\\u65\\u70\\u61\\u69\\u72',
+                    MovementSpeedIncrease = '\\u4C\\u6F\\u63\\u6F\\u6D\\u6F\\u74\\u6F\\u72',
+                    AdvancedEngineering = '\\u54\\u32',
+                    OrbitalBombardment = '\\u4F\\u72\\u62\\u69\\u74\\u61\\u6C\\u20\\u42\\u6F\\u6D\\u62\\u61\\u72\\u64\\u6D\\u65\\u6E\\u74',
+                    Teleporter = '\\u54\\u65\\u6C\\u65\\u70\\u6F\\u72\\u74\\u65\\u72',
+                    ResourceAllocationAdvanced = '\\u41\\u52\\u41\\u53',
+                    DoubleGuns = '\\u53\\u65\\u63\\u6F\\u6E\\u64\\u20\\u47\\u75\\u6E',
+                    ResourceAllocation = '\\u52\\u41\\u53',
+                    IntelProbe = '\\u49\\u6E\\u74\\u65\\u6C\\u20\\u50\\u72\\u6F\\u62\\u65',
+                    GunUpgrade = '\\u47\\u75\\u6E\\u20\\u28\\u53\\u70\\u65\\u65\\u64\\u26\\u52\\u61\\u6E\\u67\\u65\\u29',
+                    T3Engineering = '\\u54\\u33',
+                    PowerArmor = '\\u50\\u6F\\u77\\u65\\u72\\u20\\u41\\u72\\u6D\\u6F\\u72'
+                },
+                experimentals = {
+                    xeb2402 = '\\u4E\\u6F\\u76\\u61\\u78\\u20\\u53\\u61\\u74\\u65\\u6C\\u6C\\u69\\u74\\u65\\u20\\u53\\u74\\u61\\u74\\u69\\u6F\\u6E',
+                    uaa0310 = '\\u43\\u7A\\u61\\u72',
+                    ual0401 = '\\u47\\u61\\u6C\\u61\\u63\\u74\\u69\\u63\\u20\\u43\\u6F\\u6C\\u6F\\u73\\u73\\u75\\u73',
+                    url0402 = '\\u4D\\u6F\\u6E\\u6B\\u65\\u79\\u6C\\u6F\\u72\\u64',
+                    ueb2401 = '\\u4D\\u61\\u76\\u6F\\u72',
+                    uel0401 = '\\u46\\u61\\u74\\u62\\u6F\\u79',
+                    url0401 = '\\u53\\u63\\u61\\u74\\u68\\u69\\u73',
+                    xsb2401 = '\\u59\\u6F\\u6C\\u6F\\u6E\\u61\\u20\\u4F\\u73\\u73',
+                    xsl0401 = '\\u59\\u74\\u68\\u6F\\u74\\u68\\u61',
+                    xrl0403 = '\\u4D\\u65\\u67\\u61\\u6C\\u69\\u74\\u68',
+                    xsa0402 = '\\u41\\u68\\u77\\u61\\u73\\u73\\u61',
+                    ura0401 = '\\u53\\u6F\\u75\\u6C\\u72\\u69\\u70\\u70\\u65\\u72',
+                    xab1401 = '\\u50\\u61\\u72\\u61\\u67\\u6F\\u6E',
+                    uas0401 = '\\u54\\u65\\u6D\\u70\\u65\\u73\\u74',
+                    ues0401 = '\\u41\\u74\\u6C\\u61\\u6E\\u74\\u69\\u73'
+                },
+                seraphim = {
+                    RegenAura = '\\u52\\u65\\u67\\u65\\u6E\\u20\\u41\\u75\\u72\\u61',
+                    RateOfFire = '\\u47\\u75\\u6E\\u20\\u28\\u53\\u70\\u65\\u65\\u64\\u26\\u52\\u61\\u6E\\u67\\u65\\u29',
+                    AdvancedEngineering = '\\u54\\u32',
+                    AdvancedRegenAura = '\\u41\\u64\\u76\\u61\\u6E\\u63\\u65\\u64\\u20\\u52\\u65\\u67\\u65\\u6E\\u20\\u41\\u75\\u72\\u61',
+                    Missile = '\\u54\\u61\\u63\\u74\\u69\\u63\\u61\\u6C\\u20\\u4D\\u69\\u73\\u73\\u69\\u6C\\u65',
+                    DamageStabilizationAdvanced = '\\u41\\u64\\u76\\u61\\u6E\\u63\\u65\\u64\\u20\\u4E\\u61\\u6E\\u6F\\u2D\\u52\\u65\\u70\\u61\\u69\\u72',
+                    ResourceAllocation = '\\u52\\u41\\u53',
+                    ResourceAllocationAdvanced = '\\u41\\u52\\u41\\u53',
+                    BlastAttack = '\\u47\\u75\\u6E\\u20\\u28\\u53\\u70\\u6C\\u61\\u73\\u68\\u29',
+                    DamageStabilization = '\\u4E\\u61\\u6E\\u6F\\u2D\\u52\\u65\\u70\\u61\\u69\\u72',
+                    T3Engineering = '\\u54\\u33',
+                    Teleporter = '\\u54\\u65\\u6C\\u65\\u70\\u6F\\u72\\u74\\u65\\u72'
+                },
+                cybran = {
+                    CoolingUpgrade = '\\u47\\u75\\u6E\\u20\\u28\\u53\\u70\\u65\\u65\\u64\\u26\\u52\\u61\\u6E\\u67\\u65\\u29',
+                    AdvancedEngineering = '\\u54\\u32',
+                    CloakingGenerator = '\\u43\\u6C\\u6F\\u61\\u6B\\u69\\u6E\\u67',
+                    StealthGenerator = '\\u53\\u74\\u65\\u61\\u6C\\u74\\u68',
+                    NaniteTorpedoTube = '\\u54\\u6F\\u72\\u70\\u65\\u64\\u6F',
+                    ResourceAllocation = '\\u52\\u41\\u53',
+                    FAF_SelfRepairSystem = '\\u4E\\u61\\u6E\\u6F\\u2D\\u52\\u65\\u70\\u61\\u69\\u72',
+                    Teleporter = '\\u54\\u65\\u6C\\u65\\u70\\u6F\\u72\\u74\\u65\\u72',
+                    T3Engineering = '\\u54\\u33',
+                    MicrowaveLaserGenerator = '\\u4C\\u61\\u73\\u65\\u72'
+                },
+                aeon = {
+                    ShieldHeavy = '\\u53\\u68\\u69\\u65\\u6C\\u64\\u20\\u48\\u65\\u61\\u76\\u79',
+                    Shield = '\\u53\\u68\\u69\\u65\\u6C\\u64',
+                    AdvancedEngineering = '\\u54\\u32',
+                    Teleporter = '\\u54\\u65\\u6C\\u65\\u70\\u6F\\u72\\u74\\u65\\u72',
+                    ChronoDampener = '\\u43\\u68\\u72\\u6F\\u6E\\u6F\\u20\\u44\\u61\\u6D\\u70\\u65\\u6E\\u65\\u72',
+                    CrysalisBeam = '\\u47\\u75\\u6E\\u20\\u28\\u52\\u61\\u6E\\u67\\u65\\u29',
+                    ResourceAllocationAdvanced = '\\u41\\u52\\u41\\u53',
+                    ResourceAllocation = '\\u52\\u41\\u53',
+                    EnhancedSensors = '\\u53\\u65\\u6E\\u73\\u6F\\u72\\u73',
+                    HeatSink = '\\u47\\u75\\u6E\\u20\\u28\\u53\\u70\\u65\\u65\\u64\\u29',
+                    T3Engineering = '\\u54\\u33',
+                    FAF_CrysalisBeamAdvanced = '\\u47\\u75\\u6E\\u20\\u28\\u41\\u64\\u76\\u61\\u6E\\u63\\u65\\u64\\u20\\u52\\u61\\u6E\\u67\\u65\\u29'
+                }
+            },
+            LastFaction = 4,
+            LobbyOpt_RestrictedCategories = { },
+            SelectionDeprioritizerSettings = {
+                General = {
+                    filterExotics = true,
+                    isEnabled = true,
+                    filterDomains = true,
+                    filterAssisters = true
+                },
+                Filter = {
+                    Domains = 1
+                }
+            },
+            LobbyOpt_AIOverwhelmIncrease = 0.025000000372529,
+            range_RenderSelected = true,
+            LobbyOpt_CmM28Easy = 2,
+            LobbyOpt_AIGameenderStart = 20,
+            LobbyOpt_Phantom_DeathReveal = '1',
+            UserKeyActions = {
+                ['Toggle: Filter exotics'] = {
+                    order = 1004,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').toggleSetting('General','filterExotics')",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                ['sgm:next_attack_unit'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/next-attack-unit.lua").SelectNextAttackUnit()',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                Toggle_snipe_default = {
+                    order = 103,
+                    action = 'UI_Lua import("/lua/ui/game/orders.lua").ToggleMode()',
+                    category = 'Target priorities'
+                },
+                applyMyBinds = {
+                    order = 6600,
+                    action = 'UI_Lua import("/mods/whichkey/modules/main.lua").applyBinds(true)',
+                    category = 'Faf-Which-Key'
+                },
+                ['sgm:filter_tech1'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterByTech(1)',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                Shift_target_specific_type = {
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesSpecificType()',
+                    category = 'Target priorities'
+                },
+                Shields = {
+                    order = 85,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Shields")',
+                    category = 'Target priorities'
+                },
+                ['Open wheel: Util'] = {
+                    order = 1602,
+                    action = 'UI_Lua import("/mods/CommandWheel/modules/App.lua").OpenWheel("Util")',
+                    category = 'Command Wheel'
+                },
+                ['sgm:set_exclusive_group_3'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("3")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                SMD = {
+                    order = 95,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("SMD")',
+                    category = 'Target priorities'
+                },
+                ['sgm:mod_settings_dialog'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/mod-settings-dialog.lua").ShowDialog()',
+                    category = 'sercammus-faf-mod'
+                },
+                ['sgm:set_exclusive_group_8'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("8")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                Shift_Arty = {
+                    order = 92,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Arty")',
+                    category = 'Target priorities'
+                },
+                ['Open wheel: Alert'] = {
+                    order = 1603,
+                    action = 'UI_Lua import("/mods/CommandWheel/modules/App.lua").OpenWheel("Alert")',
+                    category = 'Command Wheel'
+                },
+                ['Open wheel: AlertExtended'] = {
+                    order = 1600,
+                    action = 'UI_Lua import("/mods/CommandWheel/modules/App.lua").OpenWheel("AlertExtended")',
+                    category = 'Command Wheel'
+                },
+                Shift_Shields = {
+                    order = 86,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Shields")',
+                    category = 'Target priorities'
+                },
+                ['Pause all upgrading t1 mexes'] = {
+                    order = 1011,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SetPausedAll(3, true)',
+                    category = 'ECO UI Tools'
+                },
+                ['Jump to previous camera position'] = {
+                    order = 100,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').jumpToPrevPosition()",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                ['Pause worst upgrading t1 mex'] = {
+                    order = 1013,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").PauseWorst(3)',
+                    category = 'ECO UI Tools'
+                },
+                Mex = {
+                    order = 99,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Mex")',
+                    category = 'Target priorities'
+                },
+                ['sgm:filter_tech3'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterByTech(3)',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                Default = {
+                    order = 75,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Default")',
+                    category = 'Target priorities'
+                },
+                ['Select best paused upgrading t1 mex'] = {
+                    order = 1009,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SelectBest(2)',
+                    category = 'ECO UI Tools'
+                },
+                Shift_Gunship = {
+                    order = 98,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Gunship")',
+                    category = 'Target priorities'
+                },
+                ['sgm:toggle_repeat_queue'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/behavior/toggle-abilities.lua").ToggleRepeatQueue()',
+                    category = 'sercammus-faf-mod-unit-behavior'
+                },
+                target_Naval = {
+                    order = 103,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Naval")',
+                    category = 'Target priorities'
+                },
+                ['Go to camera position 5'] = {
+                    order = 111,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').restoreCameraPosition(5)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                Shift_Units = {
+                    order = 84,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Units")',
+                    category = 'Target priorities'
+                },
+                ['Show Eco Panel'] = {
+                    order = 900,
+                    action = "UI_Lua import('/mods/EcoPanel/modules/panel.lua').showhide()",
+                    category = 'Mods'
+                },
+                ['Select all upgrading paused t1 mexes'] = {
+                    order = 1001,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SelectAll(2)',
+                    category = 'ECO UI Tools'
+                },
+                ['Select all upgrading t1 mexes'] = {
+                    order = 1002,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SelectAll(3)',
+                    category = 'ECO UI Tools'
+                },
+                ['sgm:launch_mode'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/launch-mode.lua").ToggleLaunchMode()',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                Shift_ACU = {
+                    order = 78,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("ACU")',
+                    category = 'Target priorities'
+                },
+                Units = {
+                    order = 83,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Units")',
+                    category = 'Target priorities'
+                },
+                Engies = {
+                    order = 89,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Engies")',
+                    category = 'Target priorities'
+                },
+                Shift_target_Bships = {
+                    order = 106,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Bships")',
+                    category = 'Target priorities'
+                },
+                ['sgm:filter_idle'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterIdle()',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                ['sgm:label_cursor_unit'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/ui/unit-labels.lua").LabelCursorUnit()',
+                    category = 'sercammus-faf-mod'
+                },
+                ['Set: Which domains to filter to: LAND  > NAVAL > AIR'] = {
+                    order = 2104,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').setChoiceSetting('Filter','Domains',4)",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                ['Set camera position 3'] = {
+                    order = 106,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').setCameraPosition(3)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                ACU = {
+                    order = 77,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("ACU")',
+                    category = 'Target priorities'
+                },
+                ['sgm:set_exclusive_group_9'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("9")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['sgm:filter_tech2'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterByTech(2)',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                Shift_Default = {
+                    order = 76,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Default")',
+                    category = 'Target priorities'
+                },
+                Shift_Power = {
+                    order = 80,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Power")',
+                    category = 'Target priorities'
+                },
+                ['sgm:filter_east'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterDir("EAST")',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                ['Select all idle t3 mexes'] = {
+                    order = 1006,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SelectAll(7)',
+                    category = 'ECO UI Tools'
+                },
+                ['Toggle: Mod is enabled'] = {
+                    order = 1001,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').toggleSetting('General','isEnabled')",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                ['sgm:filter_west'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterDir("WEST")',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                ['Upgrade all idle t2 mexes'] = {
+                    order = 1008,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").UpgradeAll(4)',
+                    category = 'ECO UI Tools'
+                },
+                ['sgm:engie_only_mode'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/engie-only-mode.lua").ShowUI()',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['Set: Which domains to filter to: AIR   > NAVAL > LAND'] = {
+                    order = 2106,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').setChoiceSetting('Filter','Domains',6)",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                ['sgm:filter_transports_with_payload'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterTransportsWithPayload()',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                ['Toggle: Filter domains'] = {
+                    order = 1003,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').toggleSetting('General','filterDomains')",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                Shift_Fighters = {
+                    order = 94,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Fighters")',
+                    category = 'Target priorities'
+                },
+                Shift_EXP = {
+                    order = 88,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("EXP")',
+                    category = 'Target priorities'
+                },
+                Fighters = {
+                    order = 93,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Fighters")',
+                    category = 'Target priorities'
+                },
+                ['sgm:toggle_weapons'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/behavior/toggle-abilities.lua").ToggleAllWeapons()',
+                    category = 'sercammus-faf-mod-unit-behavior'
+                },
+                RUI_HardMove = {
+                    order = 545,
+                    action = 'UI_Lua import("/lua/ui/game/commandmode.lua").MoveOnly()',
+                    category = 'orders'
+                },
+                ['Select all upgrading paused mexes'] = {
+                    order = 1005,
+                    action = 'UI_Lua SelectUnits(import("/mods/EUT/modules/mexmanager.lua").GetMexes(2)); UI_Lua AddSelectUnits(import("/mods/EUT/modules/mexmanager.lua").GetMexes(5))',
+                    category = 'ECO UI Tools'
+                },
+                ['Toggle: Filter assisters'] = {
+                    order = 1002,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').toggleSetting('General','filterAssisters')",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                Gunship = {
+                    order = 97,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Gunship")',
+                    category = 'Target priorities'
+                },
+                ['sgm:toggle_abilities'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/behavior/toggle-abilities.lua").ToggleAllAbilities()',
+                    category = 'sercammus-faf-mod-unit-behavior'
+                },
+                ['Pause worst upgrading t2 mex'] = {
+                    order = 1014,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").PauseWorst(6)',
+                    category = 'ECO UI Tools'
+                },
+                target_specific = {
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesSpecific()',
+                    category = 'Target priorities'
+                },
+                ['sgm:set_exclusive_group_5'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("5")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['Continuous Group Scatter'] = {
+                    action = 'UI_Lua import("/mods/GS/modules/Main.lua").Start(true)',
+                    category = 'Group Scatter'
+                },
+                ['sgm:print_build_templates'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/template-shortcuts.lua").PrintStoredTemplates()',
+                    category = 'sercammus-faf-mod-debug'
+                },
+                ['Select all idle t2 mexes'] = {
+                    order = 1003,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SelectAll(4)',
+                    category = 'ECO UI Tools'
+                },
+                ['sgm:select_prev_selection'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/lua/ui/game/gamemain.lua").SercammusFAFMod_SelectPreviousSelection()',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['Select all upgrading t2 mexes'] = {
+                    order = 1005,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SelectAll(6)',
+                    category = 'ECO UI Tools'
+                },
+                Shift_target_specific = {
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesSpecific()',
+                    category = 'Target priorities'
+                },
+                ['sgm:focusing_units'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/focusing-units.lua").SelectRolloverFocusUnits()',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['sgm:set_exclusive_group_6'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("6")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['sgm:store_build_template'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/template-shortcuts.lua").StoreBuildTemplate()',
+                    category = 'sercammus-faf-mod-templates'
+                },
+                Shift_SMD = {
+                    order = 96,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("SMD")',
+                    category = 'Target priorities'
+                },
+                target_specific_common = {
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesSpecificCommon()',
+                    category = 'Target priorities'
+                },
+                ['Set: Which domains to filter to: NAVAL > AIR   > LAND'] = {
+                    order = 2102,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').setChoiceSetting('Filter','Domains',2)",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                RUI_EasyReclaim = {
+                    order = 543,
+                    action = 'UI_Lua import("/lua/ui/game/commandmode.lua").EasyReclaim()',
+                    category = 'orders'
+                },
+                ['Set: Which domains to filter to: LAND  > AIR   > NAVAL'] = {
+                    order = 2103,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').setChoiceSetting('Filter','Domains',3)",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                ['Select best paused upgrading t2 mex'] = {
+                    order = 1010,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SelectBest(5)',
+                    category = 'ECO UI Tools'
+                },
+                Shift_PD = {
+                    order = 82,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("PD")',
+                    category = 'Target priorities'
+                },
+                ['Pause all upgrading mexes'] = {
+                    order = 1012,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SetPausedAll(3, true); UI_Lua import("/mods/EUT/modules/mexmanager.lua").SetPausedAll(6, true) ',
+                    category = 'ECO UI Tools'
+                },
+                target_specific_type = {
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesSpecificType()',
+                    category = 'Target priorities'
+                },
+                ['Unpause best upgrading t2 mex'] = {
+                    order = 1016,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").UnPauseBest(5)',
+                    category = 'ECO UI Tools'
+                },
+                ['Set camera position 4'] = {
+                    order = 108,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').setCameraPosition(4)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                ['Select all upgrading mexes'] = {
+                    order = 1005,
+                    action = 'UI_Lua SelectUnits(import("/mods/EUT/modules/mexmanager.lua").GetMexes(3)); UI_Lua AddSelectUnits(import("/mods/EUT/modules/mexmanager.lua").GetMexes(6))',
+                    category = 'ECO UI Tools'
+                },
+                ['Go to camera position 1'] = {
+                    order = 103,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').restoreCameraPosition(1)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                ['sgm:filter_south'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterDir("SOUTH")',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                Power = {
+                    order = 79,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Power")',
+                    category = 'Target priorities'
+                },
+                ['sgm:next_build_template'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/template-shortcuts.lua").CycleBuildTemplate(1)',
+                    category = 'sercammus-faf-mod-templates'
+                },
+                ['Cycle: Which domains to filter'] = {
+                    order = 2100,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').cycleChoiceSetting('Filter','Domains')",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                ['sgm:filter_experimentals'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterByTech(4)',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                ['Set: Which domains to filter to: NAVAL > LAND  > AIR'] = {
+                    order = 2101,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').setChoiceSetting('Filter','Domains',1)",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                ['sgm:descriptor_select'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-descriptors.lua").ExpandSelectionByDescriptor()',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                Shift_target_Destros = {
+                    order = 108,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Destros")',
+                    category = 'Target priorities'
+                },
+                ['sgm:set_exclusive_group_10'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("10")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['sgm:copy_rollover_unit'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/template-shortcuts.lua").CopyRolloverUnit()',
+                    category = 'sercammus-faf-mod-templates'
+                },
+                ['sgm:toggle_weapon_priorities'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/focusing-units.lua").ToggleWeaponPriorities()',
+                    category = 'sercammus-faf-mod-unit-behavior'
+                },
+                ['Set camera position 5'] = {
+                    order = 110,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').setCameraPosition(5)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                ['sgm:set_exclusive_group_7'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("7")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['Go to camera position 4'] = {
+                    order = 109,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').restoreCameraPosition(4)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                ['sgm:filter_north'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/unit-filters.lua").FilterDir("NORTH")',
+                    category = 'sercammus-faf-mod-unit-filtering'
+                },
+                ['sgm:range_mode'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/ui/range-mode.lua").StartRangeMode()',
+                    category = 'sercammus-faf-mod'
+                },
+                ['Set camera position 1'] = {
+                    order = 102,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').setCameraPosition(1)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                ['sgm:rollover_unit_info'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/misc-shortcuts.lua").PrintRollOverUnitInfo()',
+                    category = 'sercammus-faf-mod-debug'
+                },
+                ['Open wheel: TargetPriority'] = {
+                    order = 1604,
+                    action = 'UI_Lua import("/mods/CommandWheel/modules/App.lua").OpenWheel("TargetPriority")',
+                    category = 'Command Wheel'
+                },
+                ['sgm:toggle_anchored'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/anchored-units.lua").ToggleAnchored()',
+                    category = 'sercammus-faf-mod-unit-behavior'
+                },
+                Shift_target_specific_common = {
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesSpecificCommon()',
+                    category = 'Target priorities'
+                },
+                ['Pause all upgrading t2 mexes'] = {
+                    order = 1012,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SetPausedAll(6, true)',
+                    category = 'ECO UI Tools'
+                },
+                ['Open wheel: TargetPriorityExtended'] = {
+                    order = 1601,
+                    action = 'UI_Lua import("/mods/CommandWheel/modules/App.lua").OpenWheel("TargetPriorityExtended")',
+                    category = 'Command Wheel'
+                },
+                ['Quick Group Scatter'] = {
+                    action = 'UI_Lua import("/mods/GS/modules/Main.lua").Start(false)',
+                    category = 'Group Scatter'
+                },
+                ['Upgrade all idle t1 mexes'] = {
+                    order = 1007,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").UpgradeAll(1)',
+                    category = 'ECO UI Tools'
+                },
+                RUI_EasyReclaim_Shift = {
+                    order = 544,
+                    action = 'UI_Lua import("/lua/ui/game/commandmode.lua").EasyReclaim()',
+                    category = 'orders'
+                },
+                ['Unpause best upgrading t1 mex'] = {
+                    order = 1015,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").UnPauseBest(2)',
+                    category = 'ECO UI Tools'
+                },
+                ['Set camera position 2'] = {
+                    order = 104,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').setCameraPosition(2)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                Shift_Toggle_snipe_default = {
+                    order = 104,
+                    action = 'UI_Lua import("/lua/ui/game/orders.lua").ToggleMode()',
+                    category = 'Target priorities'
+                },
+                ['sgm:delete_build_template'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/template-shortcuts.lua").DeleteBuildTemplate()',
+                    category = 'sercammus-faf-mod-templates'
+                },
+                ['sgm:set_exclusive_group_4'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("4")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['sgm:set_exclusive_group_1'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("1")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                ['sgm:set_exclusive_group_2'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/selection/selection-sets.lua").SetExclusiveSelectionSet("2")',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                target_Bships = {
+                    order = 105,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Bships")',
+                    category = 'Target priorities'
+                },
+                EXP = {
+                    order = 87,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("EXP")',
+                    category = 'Target priorities'
+                },
+                Shift_Engies = {
+                    order = 90,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Engies")',
+                    category = 'Target priorities'
+                },
+                ['Go to camera position 3'] = {
+                    order = 107,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').restoreCameraPosition(3)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                Shift_Snipe = {
+                    order = 102,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Snipe")',
+                    category = 'Target priorities'
+                },
+                Shift_target_Naval = {
+                    order = 104,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Naval")',
+                    category = 'Target priorities'
+                },
+                ['Go to camera position 2'] = {
+                    order = 105,
+                    action = "UI_Lua import('/mods/additionalCameraStuff/modules/ACScamera.lua').restoreCameraPosition(2)",
+                    category = 'Mod: Additional Camera Stuff'
+                },
+                sacrifice = {
+                    order = 35,
+                    action = 'StartCommandMode order RULEUCC_Sacrifice',
+                    category = 'orders'
+                },
+                target_Destros = {
+                    order = 107,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Destros")',
+                    category = 'Target priorities'
+                },
+                PD = {
+                    order = 81,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("PD")',
+                    category = 'Target priorities'
+                },
+                ['Select all upgrading paused t2 mexes'] = {
+                    order = 1004,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SelectAll(5)',
+                    category = 'ECO UI Tools'
+                },
+                ['sgm:toggle_sub_selection'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/lua/ui/game/gamemain.lua").SercammusFAFMod_ToggleSubSelection()',
+                    category = 'sercammus-faf-mod-selection'
+                },
+                Snipe = {
+                    order = 101,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Snipe")',
+                    category = 'Target priorities'
+                },
+                ['sgm:attack_or_scry'] = {
+                    order = 1,
+                    action = 'UI_Lua import("/mods/sercammus_faf_mod/modules/behavior/attack-or-scry.lua").AttackOrScry()',
+                    category = 'sercammus-faf-mod-unit-behavior'
+                },
+                ['Set: Which domains to filter to: AIR   > LAND  > NAVAL'] = {
+                    order = 2105,
+                    action = "UI_Lua import('/mods/SelectionDeprioritizer/modules/SelectionDeprioritizerConfig.lua').setChoiceSetting('Filter','Domains',5)",
+                    category = 'Mod: Selection Deprioritizer'
+                },
+                Arty = {
+                    order = 91,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Arty")',
+                    category = 'Target priorities'
+                },
+                Shift_Mex = {
+                    order = 100,
+                    action = 'UI_Lua import("/lua/keymap/misckeyactions.lua").SetWeaponPrioritiesHotkey("Mex")',
+                    category = 'Target priorities'
+                },
+                ['Select all idle t1 mexes'] = {
+                    order = 1000,
+                    action = 'UI_Lua import("/mods/EUT/modules/mexmanager.lua").SelectAll(1)',
+                    category = 'ECO UI Tools'
+                }
+            },
+            ['4SB'] = {
+                ['observer.font'] = 'Arial',
+                teamColorAsBG = true,
+                useDivisions = false,
+                snowflakesSpeed = 100,
+                teamColorAlpha = 41,
+                ['player.color.bg'] = '5C443835',
+                shortenAINickName = false,
+                scoreboardReplayStyle = 'minimalictic',
+                ['title.font.mapSize'] = 'Arial',
+                ['title.font.mapName'] = 'Zeroes Three',
+                ['title.font.totalUnits'] = 'Arial',
+                ['player.font.mass'] = 'Arial Black',
+                ['player.font.focus'] = 'Arial Black',
+                ['player.font.energy'] = 'Arial Black',
+                snowflakesCount = 50,
+                teamScoreSort = true,
+                scoreboardStyle = 'default',
+                ['title.color.time'] = '8A39FF25',
+                ['observer.color.line'] = '3C7Cffff',
+                ['player.font.rating'] = 'Arial',
+                showFullResourceData = false,
+                useNickNameArmyColor = true,
+                ['title.color.quality'] = '009396ff',
+                ['title.font.time'] = 'Arial',
+                ['player.font.data'] = 'Arial',
+                ['title.font.gameSpeed'] = 'Arial',
+                ['title.color.gameSpeed'] = '3E0090C3',
+                ['player.font.name'] = 'Arial',
+                ['title.font.quality'] = 'Arial',
+                snowflakes = false,
+                ['title.color.totalUnits'] = '19ff9900',
+                ['title.color.bg'] = '66000000',
+                scoreboardScale = 100
+            },
+            Name = 'batrak',
+            LobbyOpt_RandomMap = 'Off',
+            LobbyOpt_CheatsEnabled = 'true',
+            WorldCamera_cartographic_mode = false,
+            ACS_settings = {
+                Other = {
+                    isPreviewReclaimrange = true,
+                    isPreviewKeyCtrl = false,
+                    isPreviewBuildrange = true,
+                    isPreviewAttackrange = false
+                },
+                Camera = {
+                    savePositionsAtHeight = 20,
+                    isSavePositionAtHeight = false
+                },
+                Minimap = {
+                    isZoomEnabled = true,
+                    isClosable = true,
+                    isResizableAndDraggable = true
+                }
+            },
+            chat_window = {
+                top = 389,
+                bottom = 691,
+                height = 302,
+                right = 438,
+                left = 0,
+                width = 438
+            },
+            LobbyOpt_TeamSpawn = 'fixed',
+            LobbyOpt_Score = 'no',
+            LobbyOpt_PrebuiltUnits = 'Off',
+            SUIpos = {
+                left = 1344
+            },
+            LobbyOpt_PhantomRevealTime2 = '1',
+            stratview = false,
+            LobbyOpt_LandExpansionsAllowed = '5',
+            profiler2 = {
+                top = 330,
+                bottom = 738,
+                height = 510,
+                right = 781,
+                left = 125,
+                width = 820
+            },
+            LobbyOpt_AIUnitCap = '0',
+            Notify_tech_disabled = true,
+            LobbyOpt_DisconnectionDelay02 = '90',
+            LobbyOpt_M28OvwT = '15',
+            LobbyOpt_ScenarioFile = '/maps/desert_arena_-_faf_version.v0002/desert_arena_-_faf_version_scenario.lua',
+            Autoshare_settings = {
+                top = 8,
+                MASS = 1,
+                left = 425,
+                ENERGY = 1
+            },
+            ['4SBFontsColorswindow'] = {
+                top = 117,
+                bottom = 872,
+                height = 755,
+                right = 868,
+                left = 268,
+                width = 600
+            },
+            LobbyOpt_BuildMult = '2.0',
+            LobbyOpt_M28CAInherit = 2,
+            LobbyOpt_Phantom_Meteor = '0',
+            Ctrl = {
+                enableCtrlCopy = true,
+                enableCtrlMove = true
+            },
+            console_size = 5,
+            spawn_window = {
+                top = 225,
+                bottom = 884,
+                height = 659,
+                right = 528,
+                left = 5,
+                width = 523
+            },
+            LobbyOpt_TeamLock = 'locked',
+            LobbyOpt_AIDebugDisplay = 'displayOff',
+            range_RenderHighlighted = true,
+            UIMassFabManager_settings = {
+                OnTime = 30,
+                OffStorage = 0.25,
+                OffTime = 20,
+                Top = 100,
+                Left = 100,
+                OnStorage = 0.5
+            },
+            MenuTutorialPrompt = true,
+            LobbyOpt_Share = 'FullShare',
+            LobbyOpt_CampAI = 1,
+            LobbyOpt_M28OvwR = '0.0',
+            SaveGame = '111',
+            Notify_custom_disabled = true,
+            LobbyOpt_NoRushOption = 'Off',
+            disableMinimapMesh = false,
+            EUT = {
+                UpgradeT2 = false,
+                UpgradeT1 = false,
+                MexOverlay = false,
+                UnpauseAssisted = false,
+                useNumberOverlay = false,
+                NumberOverlay = true,
+                upgradeRounded = false,
+                t1MexText = '1',
+                UnpauseOnce = false,
+                unpauseAssistedBP = 8,
+                unpauseOnce = false,
+                t3MexText = '3',
+                upgradeT1Option = true,
+                overlayOption = false,
+                OverlaySize = 8,
+                t2MexText = '2',
+                panelScale = 100,
+                overlaySize = 7,
+                unpauseAssisted = false,
+                upgradeT2Option = false
+            },
+            LobbyOpt_NavalExpansionsAllowed = '4',
+            LobbyOpt_TMLRandom = '0',
+            Last_Op_Selected = {
+                id = 'X1CA_001'
+            },
+            range_RenderBuild = true,
+            build_templates = {
+                {
+                    templateData = {
+                        2,
+                        2,
+                        {
+                            'uab1101',
+                            367,
+                            0,
+                            0
+                        }
+                    },
+                    name = 'nrg_pow_t1',
+                    icon = 'uab1101',
+                    templateID = 1
+                },
+                {
+                    templateData = {
+                        2,
+                        2,
+                        {
+                            false,
+                            1968,
+                            0,
+                            0
+                        }
+                    },
+                    name = 'pow_EStorage',
+                    icon = 'urb1105'
+                },
+                {
+                    templateData = {
+                        3,
+                        3,
+                        {
+                            'uab2101',
+                            1066,
+                            0,
+                            0
+                        },
+                        {
+                            'uab5101',
+                            1305,
+                            0,
+                            1
+                        },
+                        {
+                            'uab5101',
+                            1321,
+                            -1,
+                            0
+                        },
+                        {
+                            'uab5101',
+                            1338,
+                            0,
+                            -1
+                        },
+                        {
+                            'uab5101',
+                            1355,
+                            1,
+                            0
+                        },
+                        {
+                            'uab5101',
+                            1372,
+                            1,
+                            -1
+                        },
+                        {
+                            'uab5101',
+                            1389,
+                            -1,
+                            -1
+                        },
+                        {
+                            'uab5101',
+                            1406,
+                            -1,
+                            1
+                        },
+                        {
+                            'uab5101',
+                            1423,
+                            1,
+                            1
+                        }
+                    },
+                    name = 'Other_t1_pd',
+                    icon = 'uab2101',
+                    templateID = 3
+                },
+                {
+                    templateData = {
+                        1,
+                        1,
+                        {
+                            'uab5101',
+                            1406,
+                            0,
+                            0
+                        }
+                    },
+                    name = 'Other_wall',
+                    icon = 'uab5101',
+                    templateID = 4
+                },
+                {
+                    templateData = {
+                        20,
+                        20,
+                        {
+                            false,
+                            540,
+                            0,
+                            0
+                        },
+                        {
+                            'uab1303',
+                            606,
+                            7,
+                            1
+                        },
+                        {
+                            'uab1303',
+                            655,
+                            1,
+                            7
+                        },
+                        {
+                            'uab1303',
+                            703,
+                            -7,
+                            1
+                        },
+                        {
+                            'uab1303',
+                            788,
+                            -1,
+                            -7
+                        }
+                    },
+                    name = 'Fab_t4',
+                    icon = 'uab1301'
+                },
+                {
+                    templateData = {
+                        22,
+                        22,
+                        {
+                            false,
+                            1676,
+                            0,
+                            0
+                        },
+                        {
+                            'uab1301',
+                            2055,
+                            -8,
+                            6
+                        },
+                        {
+                            'uab1301',
+                            2216,
+                            -2,
+                            14
+                        },
+                        {
+                            'uab1301',
+                            2282,
+                            6,
+                            8
+                        },
+                        {
+                            'uab4202',
+                            2463,
+                            -1,
+                            7
+                        }
+                    },
+                    name = 'Fab_T3PG',
+                    icon = 'uab1301'
+                },
+                {
+                    templateData = {
+                        6,
+                        6,
+                        {
+                            'uab1103',
+                            225,
+                            0,
+                            0
+                        },
+                        {
+                            false,
+                            265,
+                            -2,
+                            0
+                        },
+                        {
+                            'urb1106',
+                            270,
+                            0,
+                            -2
+                        },
+                        {
+                            'urb1106',
+                            276,
+                            0,
+                            2
+                        },
+                        {
+                            'urb1106',
+                            282,
+                            2,
+                            0
+                        }
+                    },
+                    name = 'four_Ext',
+                    icon = 'urb1103'
+                },
+                {
+                    templateData = {
+                        6,
+                        6,
+                        {
+                            false,
+                            6449,
+                            0,
+                            0
+                        },
+                        {
+                            'uab1106',
+                            6476,
+                            2,
+                            -2
+                        },
+                        {
+                            'uab1106',
+                            6503,
+                            0,
+                            -4
+                        },
+                        {
+                            'uab1106',
+                            6529,
+                            -2,
+                            -2
+                        },
+                        {
+                            'uab1103',
+                            6666,
+                            0,
+                            -2
+                        }
+                    },
+                    name = 'four_Test1',
+                    icon = 'uab1106'
+                },
+                {
+                    templateData = {
+                        54,
+                        60,
+                        {
+                            false,
+                            11740,
+                            0,
+                            0
+                        },
+                        {
+                            'ueb1303',
+                            12352,
+                            7,
+                            1
+                        },
+                        {
+                            'ueb1303',
+                            12821,
+                            1,
+                            7
+                        },
+                        {
+                            'ueb1303',
+                            13301,
+                            -7,
+                            1
+                        },
+                        {
+                            'ueb1301',
+                            15410,
+                            -6,
+                            8
+                        },
+                        {
+                            'ueb1301',
+                            15617,
+                            8,
+                            8
+                        },
+                        {
+                            'ueb1303',
+                            16300,
+                            15,
+                            9
+                        },
+                        {
+                            'ueb1303',
+                            16725,
+                            9,
+                            15
+                        },
+                        {
+                            'ueb1301',
+                            17072,
+                            16,
+                            16
+                        },
+                        {
+                            'ueb1303',
+                            17371,
+                            23,
+                            17
+                        },
+                        {
+                            'ueb1303',
+                            17621,
+                            17,
+                            23
+                        },
+                        {
+                            'ueb1301',
+                            18202,
+                            24,
+                            24
+                        },
+                        {
+                            'ueb1303',
+                            18569,
+                            31,
+                            25
+                        },
+                        {
+                            'ueb1303',
+                            18791,
+                            25,
+                            31
+                        },
+                        {
+                            'ueb1301',
+                            19016,
+                            16,
+                            30
+                        },
+                        {
+                            'ueb1303',
+                            19283,
+                            17,
+                            37
+                        },
+                        {
+                            'ueb1303',
+                            19472,
+                            9,
+                            31
+                        },
+                        {
+                            'ueb1301',
+                            19684,
+                            2,
+                            30
+                        },
+                        {
+                            'ueb1303',
+                            19880,
+                            3,
+                            37
+                        },
+                        {
+                            'ueb1303',
+                            20073,
+                            -5,
+                            31
+                        },
+                        {
+                            'ueb1301',
+                            20386,
+                            -4,
+                            38
+                        },
+                        {
+                            'ueb1303',
+                            20715,
+                            -3,
+                            45
+                        },
+                        {
+                            'ueb1303',
+                            21066,
+                            -11,
+                            39
+                        },
+                        {
+                            'ueb1303',
+                            21445,
+                            -9,
+                            52
+                        },
+                        {
+                            'ueb1303',
+                            21632,
+                            -17,
+                            46
+                        },
+                        {
+                            'ueb1301',
+                            21688,
+                            -2,
+                            52
+                        },
+                        {
+                            'ueb1301',
+                            21979,
+                            4,
+                            44
+                        },
+                        {
+                            'ueb1303',
+                            22299,
+                            11,
+                            45
+                        },
+                        {
+                            'ueb1303',
+                            22625,
+                            5,
+                            51
+                        },
+                        {
+                            'ueb1301',
+                            22859,
+                            18,
+                            44
+                        },
+                        {
+                            'ueb1303',
+                            23185,
+                            25,
+                            45
+                        }
+                    },
+                    name = 'Power Generator',
+                    icon = 'ueb1301'
+                },
+                {
+                    templateData = {
+                        18,
+                        18,
+                        {
+                            false,
+                            16429,
+                            0,
+                            0
+                        },
+                        {
+                            'xsb1104',
+                            16520,
+                            0,
+                            2
+                        },
+                        {
+                            'xsb1104',
+                            16574,
+                            0,
+                            4
+                        },
+                        {
+                            'xsb1104',
+                            16628,
+                            0,
+                            6
+                        },
+                        {
+                            'xsb1104',
+                            16684,
+                            0,
+                            10
+                        },
+                        {
+                            'xsb1104',
+                            16751,
+                            0,
+                            8
+                        },
+                        {
+                            'xsb1104',
+                            16823,
+                            0,
+                            -2
+                        },
+                        {
+                            'xsb1104',
+                            16884,
+                            0,
+                            -4
+                        },
+                        {
+                            'xsb1104',
+                            16938,
+                            2,
+                            -3
+                        },
+                        {
+                            'xsb1104',
+                            16992,
+                            2,
+                            -1
+                        },
+                        {
+                            'xsb1104',
+                            17046,
+                            2,
+                            1
+                        },
+                        {
+                            'xsb1104',
+                            17100,
+                            2,
+                            3
+                        },
+                        {
+                            'xsb1104',
+                            17158,
+                            2,
+                            5
+                        },
+                        {
+                            'xsb1104',
+                            17217,
+                            2,
+                            7
+                        },
+                        {
+                            'xsb1104',
+                            17272,
+                            2,
+                            9
+                        },
+                        {
+                            'xsb1104',
+                            17326,
+                            4,
+                            6
+                        },
+                        {
+                            'xsb1104',
+                            17380,
+                            4,
+                            4
+                        },
+                        {
+                            'xsb1104',
+                            17436,
+                            4,
+                            2
+                        },
+                        {
+                            'xsb1104',
+                            17493,
+                            4,
+                            0
+                        },
+                        {
+                            'xsb1104',
+                            17554,
+                            -8,
+                            6
+                        },
+                        {
+                            'xsb1104',
+                            17608,
+                            -8,
+                            8
+                        },
+                        {
+                            'xsb1104',
+                            17662,
+                            -8,
+                            10
+                        },
+                        {
+                            'xsb1104',
+                            17717,
+                            -8,
+                            4
+                        },
+                        {
+                            'xsb1104',
+                            17819,
+                            -8,
+                            2
+                        },
+                        {
+                            'xsb1104',
+                            17928,
+                            -8,
+                            0
+                        },
+                        {
+                            'xsb1104',
+                            17994,
+                            -8,
+                            -2
+                        },
+                        {
+                            'xsb1104',
+                            18053,
+                            -8,
+                            -4
+                        },
+                        {
+                            'xsb1104',
+                            18108,
+                            -6,
+                            -1
+                        },
+                        {
+                            'xsb1104',
+                            18162,
+                            -4,
+                            -1
+                        },
+                        {
+                            'xsb1104',
+                            18216,
+                            -2,
+                            -1
+                        },
+                        {
+                            'xsb1104',
+                            18270,
+                            -6,
+                            -3
+                        },
+                        {
+                            'xsb1104',
+                            18324,
+                            -4,
+                            -3
+                        },
+                        {
+                            'xsb1104',
+                            18378,
+                            -2,
+                            -3
+                        },
+                        {
+                            'xsb1104',
+                            18432,
+                            -6,
+                            -5
+                        },
+                        {
+                            'xsb1104',
+                            18486,
+                            -4,
+                            -5
+                        },
+                        {
+                            'xsb1104',
+                            18540,
+                            -2,
+                            -5
+                        },
+                        {
+                            'xsb1104',
+                            18598,
+                            -6,
+                            9
+                        },
+                        {
+                            'xsb1104',
+                            18652,
+                            -4,
+                            9
+                        },
+                        {
+                            'xsb1104',
+                            18706,
+                            -2,
+                            9
+                        },
+                        {
+                            'xsb1104',
+                            18760,
+                            -6,
+                            11
+                        },
+                        {
+                            'xsb1104',
+                            18814,
+                            -4,
+                            11
+                        },
+                        {
+                            'xsb1104',
+                            18868,
+                            -2,
+                            11
+                        },
+                        {
+                            'xsb1104',
+                            18923,
+                            -6,
+                            7
+                        },
+                        {
+                            'xsb1104',
+                            18977,
+                            -4,
+                            7
+                        },
+                        {
+                            'xsb1104',
+                            19037,
+                            -2,
+                            7
+                        },
+                        {
+                            'xsb1104',
+                            19101,
+                            -10,
+                            9
+                        },
+                        {
+                            'xsb1104',
+                            19162,
+                            -10,
+                            7
+                        },
+                        {
+                            'xsb1104',
+                            19216,
+                            -10,
+                            5
+                        },
+                        {
+                            'xsb1104',
+                            19270,
+                            -10,
+                            3
+                        },
+                        {
+                            'xsb1104',
+                            19324,
+                            -10,
+                            1
+                        },
+                        {
+                            'xsb1104',
+                            19379,
+                            -10,
+                            -1
+                        },
+                        {
+                            'xsb1104',
+                            19445,
+                            -10,
+                            -3
+                        },
+                        {
+                            'xsb1104',
+                            19512,
+                            -12,
+                            0
+                        },
+                        {
+                            'xsb1104',
+                            19595,
+                            -12,
+                            2
+                        },
+                        {
+                            'xsb1104',
+                            19665,
+                            -12,
+                            4
+                        },
+                        {
+                            'xsb1104',
+                            19753,
+                            -12,
+                            6
+                        },
+                        {
+                            'xsb4202',
+                            19870,
+                            -4,
+                            3
+                        }
+                    },
+                    name = 'Fab_MassFabricator',
+                    icon = 'xsb1104'
+                },
+                {
+                    templateData = {
+                        3,
+                        3,
+                        {
+                            'uab2104',
+                            14838,
+                            0,
+                            0
+                        },
+                        {
+                            'uab5101',
+                            15071,
+                            1,
+                            0
+                        },
+                        {
+                            'uab5101',
+                            15086,
+                            0,
+                            -1
+                        },
+                        {
+                            'uab5101',
+                            15101,
+                            -1,
+                            0
+                        },
+                        {
+                            'uab5101',
+                            15117,
+                            0,
+                            1
+                        }
+                    },
+                    name = 'Other_Anti-Air',
+                    icon = 'uab2104',
+                    templateID = 11
+                },
+                {
+                    templateData = {
+                        18,
+                        4,
+                        {
+                            false,
+                            25221,
+                            0,
+                            0
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            1,
+                            -2
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            -1,
+                            -2
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            7,
+                            -2
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            9,
+                            -2
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            -5,
+                            -2
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            5,
+                            -2
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            -7,
+                            -2
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            -6,
+                            0
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            -4,
+                            0
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            3,
+                            -2
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            -2,
+                            0
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            4,
+                            0
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            2,
+                            0
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            6,
+                            0
+                        },
+                        {
+                            'xeb0204',
+                            25221,
+                            -3,
+                            -2
+                        }
+                    },
+                    name = 'Engineering Station',
+                    icon = 'xeb0204'
+                },
+                {
+                    templateData = {
+                        18,
+                        18,
+                        {
+                            false,
+                            16429,
+                            0,
+                            0
+                        },
+                        {
+                            'uab1104',
+                            16520,
+                            0,
+                            2
+                        },
+                        {
+                            'uab1104',
+                            16574,
+                            0,
+                            4
+                        },
+                        {
+                            'uab1104',
+                            16628,
+                            0,
+                            6
+                        },
+                        {
+                            'uab1104',
+                            16684,
+                            0,
+                            10
+                        },
+                        {
+                            'uab1104',
+                            16751,
+                            0,
+                            8
+                        },
+                        {
+                            'uab1104',
+                            16823,
+                            0,
+                            -2
+                        },
+                        {
+                            'uab1104',
+                            16884,
+                            0,
+                            -4
+                        },
+                        {
+                            'uab1104',
+                            16938,
+                            2,
+                            -3
+                        },
+                        {
+                            'uab1104',
+                            16992,
+                            2,
+                            -1
+                        },
+                        {
+                            'uab1104',
+                            17046,
+                            2,
+                            1
+                        },
+                        {
+                            'uab1104',
+                            17100,
+                            2,
+                            3
+                        },
+                        {
+                            'uab1104',
+                            17158,
+                            2,
+                            5
+                        },
+                        {
+                            'uab1104',
+                            17217,
+                            2,
+                            7
+                        },
+                        {
+                            'uab1104',
+                            17272,
+                            2,
+                            9
+                        },
+                        {
+                            'uab1104',
+                            17326,
+                            4,
+                            6
+                        },
+                        {
+                            'uab1104',
+                            17380,
+                            4,
+                            4
+                        },
+                        {
+                            'uab1104',
+                            17436,
+                            4,
+                            2
+                        },
+                        {
+                            'uab1104',
+                            17493,
+                            4,
+                            0
+                        },
+                        {
+                            'uab1104',
+                            17554,
+                            -8,
+                            6
+                        },
+                        {
+                            'uab1104',
+                            17608,
+                            -8,
+                            8
+                        },
+                        {
+                            'uab1104',
+                            17662,
+                            -8,
+                            10
+                        },
+                        {
+                            'uab1104',
+                            17717,
+                            -8,
+                            4
+                        },
+                        {
+                            'uab1104',
+                            17819,
+                            -8,
+                            2
+                        },
+                        {
+                            'uab1104',
+                            17928,
+                            -8,
+                            0
+                        },
+                        {
+                            'uab1104',
+                            17994,
+                            -8,
+                            -2
+                        },
+                        {
+                            'uab1104',
+                            18053,
+                            -8,
+                            -4
+                        },
+                        {
+                            'uab1104',
+                            18108,
+                            -6,
+                            -1
+                        },
+                        {
+                            'uab1104',
+                            18162,
+                            -4,
+                            -1
+                        },
+                        {
+                            'uab1104',
+                            18216,
+                            -2,
+                            -1
+                        },
+                        {
+                            'uab1104',
+                            18270,
+                            -6,
+                            -3
+                        },
+                        {
+                            'uab1104',
+                            18324,
+                            -4,
+                            -3
+                        },
+                        {
+                            'uab1104',
+                            18378,
+                            -2,
+                            -3
+                        },
+                        {
+                            'uab1104',
+                            18432,
+                            -6,
+                            -5
+                        },
+                        {
+                            'uab1104',
+                            18486,
+                            -4,
+                            -5
+                        },
+                        {
+                            'uab1104',
+                            18540,
+                            -2,
+                            -5
+                        },
+                        {
+                            'uab1104',
+                            18598,
+                            -6,
+                            9
+                        },
+                        {
+                            'uab1104',
+                            18652,
+                            -4,
+                            9
+                        },
+                        {
+                            'uab1104',
+                            18706,
+                            -2,
+                            9
+                        },
+                        {
+                            'uab1104',
+                            18760,
+                            -6,
+                            11
+                        },
+                        {
+                            'uab1104',
+                            18814,
+                            -4,
+                            11
+                        },
+                        {
+                            'uab1104',
+                            18868,
+                            -2,
+                            11
+                        },
+                        {
+                            'uab1104',
+                            18923,
+                            -6,
+                            7
+                        },
+                        {
+                            'uab1104',
+                            18977,
+                            -4,
+                            7
+                        },
+                        {
+                            'uab1104',
+                            19037,
+                            -2,
+                            7
+                        },
+                        {
+                            'uab1104',
+                            19101,
+                            -10,
+                            9
+                        },
+                        {
+                            'uab1104',
+                            19162,
+                            -10,
+                            7
+                        },
+                        {
+                            'uab1104',
+                            19216,
+                            -10,
+                            5
+                        },
+                        {
+                            'uab1104',
+                            19270,
+                            -10,
+                            3
+                        },
+                        {
+                            'uab1104',
+                            19324,
+                            -10,
+                            1
+                        },
+                        {
+                            'uab1104',
+                            19379,
+                            -10,
+                            -1
+                        },
+                        {
+                            'uab1104',
+                            19445,
+                            -10,
+                            -3
+                        },
+                        {
+                            'uab1104',
+                            19512,
+                            -12,
+                            0
+                        },
+                        {
+                            'uab1104',
+                            19595,
+                            -12,
+                            2
+                        },
+                        {
+                            'uab1104',
+                            19665,
+                            -12,
+                            4
+                        },
+                        {
+                            'uab1104',
+                            19753,
+                            -12,
+                            6
+                        },
+                        {
+                            'uab4202',
+                            19870,
+                            -4,
+                            3
+                        }
+                    },
+                    name = 'Mass Fabricator',
+                    icon = 'uab1104'
+                },
+                {
+                    templateData = {
+                        6,
+                        6,
+                        {
+                            false,
+                            583,
+                            0,
+                            0
+                        }
+                    },
+                    name = 'nrg_hc',
+                    icon = 'xsb1102'
+                }
+            },
+            LobbyOpt_Victory = 'sandbox',
+            LobbyOpt_PhantomRevealTime1 = '30',
+            Notify_experimentals_disabled = true,
+            LobbyOpt_PhantomPaladinBonus = '45',
+            Notify_overlay_disabled = true,
+            Notify_acus_disabled = false,
+            activeFilters = {
+                selection = true,
+                rollover = true,
+                buildpreview = true
+            },
+            ViewedTimeline = true,
+            Notify_nomads_disabled = true,
+            options = {
+                [''] = '',
+                skin_change_on_start = 'no',
+                gui_autoselectinverse = 0,
+                mp_taunt_head_enabled = 'true',
+                experimental_graphics = 1,
+                gui_detailed_unitview = 1,
+                show_hotkeylabels = false,
+                gui_improved_unit_deselection = 0,
+                assist_to_unpause = 'Off',
+                bloom_intensity = 12,
+                casting_painting = false,
+                minimum_reclaim_amount = 10,
+                lock_fullscreen_cursor_to_window = 0,
+                ['selection-sets-double-tap-behavior'] = 'translate-zoom',
+                assist_to_upgrade = 'Off',
+                accept_build_templates = 'yes',
+                display_eta = true,
+                gui_zoom_pop_distance = 80,
+                spawn_menu_team_columns = 4,
+                assist_to_copy_command_queue = 'OnlyEngineers',
+                wheel_sensitivity = 40,
+                gui_draggable_queue = 1,
+                keyboard_pan_speed = 90,
+                level_of_detail = 1,
+                cw_trigger = 'KEY_HOLD',
+                selection_sets_production_behavior = false,
+                gui_max_autogroups = 9,
+                options_show_player_names = 'on',
+                structure_ringing_extractors_fabs = 'all',
+                fidelity = 2,
+                structure_ringing_radar = 'on',
+                ui_scale = 1,
+                music_volume = 19,
+                frametime = 16,
+                assist_to_upgrade_radar = 'Off',
+                quick_exit = 'false',
+                maximum_reclaim_count = 1000,
+                structure_ringing_artillery = 'on',
+                spawn_menu_filter_menu_sort = 1,
+                structure_capping_feature_01 = 'on',
+                texture_level = 0,
+                ['selection-sets-add-behavior'] = false,
+                uvd_format = 'full',
+                strat_icons_always_on = 0,
+                tooltips = true,
+                cursor_hover_scanning = 'off',
+                subtitles = true,
+                tooltip_delay = 0.375,
+                shadow_quality = 2,
+                arrow_keys_pan_main_view = 1,
+                gui_template_name_cutoff = 0,
+                fx_volume = 72,
+                bloom_render = 1,
+                keyboard_rotate_speed = 10,
+                structure_ringing_artillery_end_game = 'on',
+                spawn_menu_notech_filter = 1,
+                master_volume = 35,
+                loading_tips = true,
+                camera_shake_intensity = 0,
+                selection_sets_double_tap_behavior = 'translate-zoom',
+                gui_render_custom_names = 0,
+                gui_bigger_strat_build_icons = 0,
+                assist_mex = true,
+                gui_display_grouping_indicator = 1,
+                selection_threshold_reclaim = 32,
+                gui_template_rotator = 1,
+                spawn_menu_split_sources = 0,
+                econ_warnings = true,
+                gui_render_armament_detail = 1,
+                mainmenu_bgmovie = true,
+                gui_seperate_idle_builders = 1,
+                reclaim_overview_size_scale = 48,
+                gui_visible_template_names = 1,
+                cursor_splash_damage = 'on',
+                keyboard_pan_accelerate_multiplier = 4,
+                primary_adapter = '1920,1080,60',
+                gui_render_enemy_lifebars = 1,
+                ['selection-sets-double-tap-decay'] = 1000,
+                hotbuild_cycle_preview = 1,
+                steal_from_other_control_groups = 'Off',
+                vo_volume = 100,
+                fidelity_presets = 4,
+                repeatbuild = 'Off',
+                show_attached_unit_lifebars = true,
+                strat_icon_scale = 1,
+                render_skydome = 1,
+                selectedlanguage = 'US',
+                cursor_depth_scanning = 'commands',
+                gui_enhanced_unitview = 1,
+                add_to_factory_control_group = 'Off',
+                faction_font_color = false,
+                reclaim_batching_distance_treshold = 190,
+                selection_sets_double_tap_decay = 1000,
+                gui_queue_on_hover_02 = 'only-obs',
+                spawn_menu_filter_columns = 6,
+                world_border = true,
+                secondary_adapter = 'disabled',
+                spawn_menu_type_filter_mode = 0,
+                antialiasing = 64,
+                screen_edge_pans_main_view = 1,
+                keyboard_rotate_accelerate_multiplier = 2,
+                vsync = 0,
+                ['selection-sets-production-behavior'] = false,
+                spawn_menu_paragon_filter = 0,
+                gui_all_race_templates = 1,
+                selection_threshold_regular = 10,
+                invert_middle_mouse_button = 0,
+                share_mouse = 'off',
+                selection_sets_add_behavior = false,
+                gui_idle_engineer_avatars = 0,
+                automex = 'onlyT1',
+                selection_threshold_replay = 16,
+                alt_to_force_attack_move = 'Off',
+                gui_templates_factory = 1,
+                reclaim_overview_batching = 1,
+                hotbuild_cycle_reset_time = 1100,
+                gui_autoselect = 0
+            },
+            UserDebugKeyMap = {
+                ['Ctrl-T'] = 'debug_teleport',
+                ['Ctrl-Alt-V'] = 'debug_skeletons',
+                ['Ctrl-Alt-B'] = 'debug_bones',
+                ['Alt-Delete'] = 'debug_destroy_units',
+                ['Ctrl-Alt-Z'] = 'debug_sally_shears',
+                ['Ctrl-F9'] = 'debug_toggle_log_window',
+                ['Ctrl-Shift-V'] = 'debug_paste_units',
+                ['Alt-F2'] = 'debug_create_unit',
+                ['Ctrl-Alt-W'] = 'debug_dump_focus_ui_control',
+                ['Ctrl-Shift-F1'] = 'debug_toggle_pannels',
+                ['Ctrl-Alt-N'] = 'debug_nodamage',
+                ['Ctrl-Shift-C'] = 'debug_copy_units',
+                ['Ctrl-Alt-D'] = 'debug_dump_ui_controls'
+            },
+            console_window = {
+                top = 85,
+                bottom = 587,
+                height = 502,
+                right = 443,
+                left = 0,
+                width = 443
+            },
+            LobbyOpt_AIReplacement = 'Off',
+            LobbyOpt_AIOverwhelmDelay = 20,
+            LobbyOpt_FogOfWar = 'explored',
+            skin = 'uef',
+            LobbyOpt_PhantomPaladinCoefficient = '2',
+            LobbyOpt_M28PrioritiseBPs = 1
+        }
+    }
+}
+mods_favorite = { }
+version = {
+    major = 1
+}
+Windows = {
+    Log = {
+        y = 192,
+        x = 1990,
+        height = 745,
+        width = 942
+    },
+    Main = {
+        y = 0,
+        x = 0,
+        height = 948,
+        maximized = true,
+        width = 1564
+    },
+    Debug = {
+        y = 33,
+        x = 2733,
+        height = 550,
+        Watch = {
+            Stack = {
+                block = 154,
+                source = 212,
+                line = 72
+            },
+            Global = {
+                value = 212,
+                type = 215,
+                name = 220
+            },
+            Local = {
+                value = 212,
+                type = 134,
+                name = 217
+            }
+        },
+        width = 900,
+        Sash = {
+            horizontal = 212,
+            vertical = 330
+        }
+    }
+}
+PerformanceTrackingV2 = {
+    SkirmishWithAI = {
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 11,
+            UnitCount = {
+                Min = 230,
+                Max = 279
+            }
+        },
+        {
+            Samples = 62,
+            UnitCount = {
+                Min = 56.139995574951,
+                Max = 389.85995483398
+            }
+        },
+        {
+            Samples = 104,
+            UnitCount = {
+                Min = 83.729484558105,
+                Max = 652.68615722656
+            }
+        },
+        {
+            Samples = 8609,
+            UnitCount = {
+                Min = 20.35000038147,
+                Max = 314.64999389648
+            }
+        },
+        Samples = 49
+    },
+    Skirmish = {
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 0
+        },
+        {
+            Samples = 64,
+            UnitCount = {
+                Min = 4170.412109375,
+                Max = 6810.3374023438
+            }
+        },
+        {
+            Samples = 3099,
+            UnitCount = {
+                Min = 4799.9125976563,
+                Max = 6544.3461914063
+            }
+        },
+        {
+            Samples = 14573,
+            UnitCount = {
+                Min = 3830.56640625,
+                Max = 5216.66015625
+            }
+        },
+        {
+            Samples = 298269,
+            UnitCount = {
+                Min = 49.842498779297,
+                Max = 911.00744628906
+            }
+        },
+        {
+            Samples = 33531,
+            UnitCount = {
+                Min = 2095.5095214844,
+                Max = 3685.7490234375
+            }
+        },
+        {
+            Samples = 34516,
+            UnitCount = {
+                Min = 1830.1557617188,
+                Max = 2956.9582519531
+            }
+        },
+        {
+            Samples = 36897,
+            UnitCount = {
+                Min = 1547.6120605469,
+                Max = 2433.3642578125
+            }
+        },
+        {
+            Samples = 37775,
+            UnitCount = {
+                Min = 1206.4770507813,
+                Max = 2313.0637207031
+            }
+        },
+        {
+            Samples = 39641,
+            UnitCount = {
+                Min = 1194.5289306641,
+                Max = 1639.1617431641
+            }
+        },
+        {
+            Samples = 38855,
+            UnitCount = {
+                Min = 804.39312744141,
+                Max = 1465.4666748047
+            }
+        },
+        {
+            Samples = 38436,
+            UnitCount = {
+                Min = 823.19915771484,
+                Max = 1366.7850341797
+            }
+        },
+        {
+            Samples = 39068,
+            UnitCount = {
+                Min = 578.61145019531,
+                Max = 1008.7269897461
+            }
+        },
+        {
+            Samples = 37655,
+            UnitCount = {
+                Min = 505.12365722656,
+                Max = 961.63806152344
+            }
+        },
+        {
+            Samples = 459906,
+            UnitCount = {
+                Min = 37.568000793457,
+                Max = 677.7919921875
+            }
+        },
+        Samples = 1561
+    }
+}
+debug = {
+    enable_debug_facilities = true
+}
+active_mods = {
+    ['35dee29e-ea16-1488-9ce9-666habad666'] = true,
+    ['11755-227923-1815151_44744'] = true,
+    ['zcbf6277-24e3-437a-b968-Common-v1'] = true,
+    ['engineer-alt-selection-v01'] = true,
+    ['9e0e482a-ebbd-40ed-95e0-9619ccdc4d13'] = true,
+    ['11711-227933-99199_44747'] = true,
+    ['hover-over-deposits-04'] = true,
+    ['b59f537b-67ae-40b4-897b-c6e91d9b2963'] = true,
+    ['11811-55555-32833_77744'] = true,
+    ['eco-ui-tools-4z0t-v11'] = true,
+    ['11571-22722-33963_22585_3'] = true,
+    ['ui-mod-tools-4z0t-v12'] = true,
+    ['4z0ts-scoreboard-v15'] = true,
+    ['20dec73e-d4b2-11e5-ab30-625662822222'] = true,
+    ['smart-ring-display-v01'] = true,
+    ['HOTKEY-SACR-498f-8c44-a05d4b8985x2'] = true,
+    ['5362BE90-44BE-11DD-A5v2-pings-aaah'] = true,
+    ['bc7731b6-1416-11ea-8d71-362b9e155667'] = true
+}
