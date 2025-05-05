@@ -55,6 +55,7 @@ normal = {
 
     { key="T",     modifier="CTRL",  func=mstructure.upgrade_pause_t2mexes_with_storages },
     -- { key="G",     modifier="CTRL",  func=mstructure.initT1MexControl },
+    { key="G",     modifier="CTRL",      func=mland.sneaky_damage_dealers },
 
 
     { key="X",     modifier="CTRL",  func=mstructure.cycle_pds },
@@ -524,9 +525,9 @@ tech3air = {
     { key="G",     modifier="",      count=1, name="T2_Gunship", func=mfactory.factory_order },
     { key="H",     modifier="",      count=1, name="TECH3_GUNSHIP", func=mfactory.factory_order },
     { key="C",     modifier="",      count=1, name="T3_Torpedo_Bomber", func=mfactory.factory_order },
-    { key="V",     modifier="",      count=1, name="T3_Strategic_Bomber", func=mfactory.factory_order },
+    { key="N",     modifier="",      count=1, name="T3_Strategic_Bomber", func=mfactory.factory_order },
     { key="B",     modifier="",      count=1, name="T1_Attack_Bomber", func=mfactory.factory_order },
-    { key="N",     modifier="",      count=1, name="T3_Heavy_Air_Transport", func=mfactory.factory_order },
+    -- { key="N",     modifier="",      count=1, name="T3_Heavy_Air_Transport", func=mfactory.factory_order },
 
     { key="Q",     modifier="SHIFT", count=3, name="T2_Field_Engineer", func=mfactory.factory_order },
     { key="W",     modifier="SHIFT", count=3, name="T3_Engineer", func=mfactory.factory_order },
@@ -538,9 +539,9 @@ tech3air = {
     { key="G",     modifier="SHIFT", count=3, name="T2_Gunship", func=mfactory.factory_order },
     { key="H",     modifier="SHIFT", count=3, name="TECH3_GUNSHIP", func=mfactory.factory_order },
     { key="C",     modifier="SHIFT", count=3, name="T3_Torpedo_Bomber", func=mfactory.factory_order },
-    { key="V",     modifier="SHIFT", count=3, name="T3_Strategic_Bomber", func=mfactory.factory_order },
+    { key="N",     modifier="SHIFT", count=3, name="T3_Strategic_Bomber", func=mfactory.factory_order },
     { key="B",     modifier="SHIFT", count=3, name="T1_Attack_Bomber", func=mfactory.factory_order },
-    { key="N",     modifier="SHIFT", count=3, name="T3_Heavy_Air_Transport", func=mfactory.factory_order },
+    -- { key="N",     modifier="SHIFT", count=3, name="T3_Heavy_Air_Transport", func=mfactory.factory_order },
 }
 
 tech1land = {
