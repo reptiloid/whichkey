@@ -1,0 +1,15 @@
+name = "CommanderInfo"
+version = 1
+copyright = "Do whatever you want with it, feel free to add stuff, copy, edit, delete code or publish own versions"
+description = ""
+author = "Furry_Manul"
+uid = "66dee29e-ea15-1488-9ce9-666habad666"
+selectable = true
+enabled = true
+exclusive = false
+ui_only = true
+requiresNames = {}
+conflicts = {}
+requires = {"zcbf6277-24e3-437a-b968-Common-v1"}
+before = {"zcbf6277-24e3-437a-b968-Common-v1"}
+after = {}

@@ -1,0 +1,9 @@
+name = "Calibers Radar Icons"
+uid = "11711-227933-99199_44747"
+description = "Provides a unique highlight to all radars by tech level."
+copyright = "Caliber"
+author = "Caliber"
+icon = "/mods/Calibersradar/icon.png"
+version = 3
+exclusive = false
+ui_only = true
